@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Mini Govil Astro</title>
+  <meta name="description" content="Contact Mini Govil Astro for bookings and consultations." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mini Govil Astro</a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-section">
+      <h1>Contact</h1>
+      <p>Ready to transform your journey? Message directly on WhatsApp or connect on Instagram.</p>
+      <ul class="contact-list">
+        <li>WhatsApp: <a href="https://wa.me/917411307621?text=Hi,%20I%20would%20like%20to%20book%20a%20session">+91 74113 07621</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/minigovilastro/">@minigovilastro</a></li>
+        <li>Email: <a href="mailto:minigovilastro@example.com">minigovilastro@example.com</a></li>
+      </ul>
+    </section>
+
+    <section class="page-section map-card">
+      <h2>Instant Booking</h2>
+      <p>Click on WhatsApp and send this intro message:</p>
+      <pre>Hello Mini Govil, I'm interested in a consultation + courses.</pre>
+      <a class="btn btn-primary" href="https://wa.me/917411307621?text=Hello%20Mini%20Govil,%20I'm%20interested%20in%20a%20consultation%20and%20course%20details">Start Chat</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Contact</h3>
+        <p>WhatsApp: <a href="https://wa.me/917411307621">+91 74113 07621</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/minigovilastro/">@minigovilastro</a></p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© 2026 Mini Govil Astro · All rights reserved</p>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('site-nav');
+    const btn = document.getElementById('menuToggle');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

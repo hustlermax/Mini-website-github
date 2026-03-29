@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Mini Govil Astro</title>
+  <meta name="description" content="About Mini Govil, Vedic astrologer and tarot expert." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mini Govil Astro</a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-section">
+      <h1>About Mini Govil</h1>
+      <p>Mini Govil specializes in Vedic Astrology, Tarot Reading, and Face Reading. She offers practical, compassionate guidance in personal and professional life.</p>
+      <ul>
+        <li>10+ years in astrology and wellness coaching</li>
+        <li>Delivered 5,000+ readings globally</li>
+        <li>Founder of MiniAstroTarot and online learning programs</li>
+      </ul>
+      <p>Mini combines classical Jyotish with modern psychology, helping clients from relationships to business decisions.</p>
+      <p>Her Instagram profile includes real-case study updates, short learning snippets and daily ritual micro-guidance.</p>
+      <a class="btn btn-primary" href="https://wa.me/917411307621?text=Hi%20Mini,%20I%20would%20like%20to%20schedule%20a%20session">Book a Consultation</a>
+    </section>
+
+    <section class="page-section">
+      <h2>How She Works</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>1. Initial Conversation</h3>
+          <p>Define goals and key life areas for focus.</p>
+        </article>
+        <article class="card">
+          <h3>2. Personalized Reading</h3>
+          <p>Detailed chart & tarot review; face reading insights.</p>
+        </article>
+        <article class="card">
+          <h3>3. Growth Plan</h3>
+          <p>Clear action steps and course recommendations.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Contact</h3>
+        <p>WhatsApp: <a href="https://wa.me/917411307621">+91 74113 07621</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/minigovilastro/">@minigovilastro</a></p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© 2026 Mini Govil Astro · All rights reserved</p>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('site-nav');
+    const btn = document.getElementById('menuToggle');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Mini Govil Astro</title>
+  <meta name="description" content="Astrology, Tarot and Face Reading services by Mini Govil." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mini Govil Astro</a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-section">
+      <h1>Services</h1>
+      <p>Deep transformation through personalized readings and curated learning paths.</p>
+    </section>
+
+    <section class="page-section">
+      <h2>Consultation</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Astrology Reading</h3>
+          <p>Natal chart analysis, transit guidance, career and relationship timing.</p>
+        </article>
+        <article class="card">
+          <h3>Tarot Guidance</h3>
+          <p>Clarity around choices, blocks, and next steps using major and minor arcana.</p>
+        </article>
+        <article class="card">
+          <h3>Combined Approach</h3>
+          <p>Astro + Tarot pathway with holistic life wheel review.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <h2>Courses</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Vedic Astrology</h3>
+          <p>Fundamentals of horoscope reading, planetary strengths, benefits and remedies.</p>
+        </article>
+        <article class="card">
+          <h3>Tarot Reading</h3>
+          <p>Major & Minor Arcana study, spreads, intuition development and practice tracks.</p>
+        </article>
+        <article class="card">
+          <h3>Face Reading</h3>
+          <p>Personality insights and health indicators from face map, lines, eyes and forehead.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <h2>Book Directly</h2>
+      <a class="btn btn-primary" href="https://wa.me/917411307621?text=Hello%20Mini%20Govil,%20I%20am%20interested%20in%20your%20services">Book via WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Contact</h3>
+        <p>WhatsApp: <a href="https://wa.me/917411307621">+91 74113 07621</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/minigovilastro/">@minigovilastro</a></p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© 2026 Mini Govil Astro · All rights reserved</p>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('site-nav');
+    const btn = document.getElementById('menuToggle');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
