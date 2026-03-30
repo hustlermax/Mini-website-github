@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mini Govil — Astro Tarot House</title>
-  <meta name="description" content="Vedic astrology, tarot reading, courses and life transformation by Mini Govil." />
+  <title>Mini Govil | Vedic Astrologer &amp; Tarot Reader India</title>
+  <meta name="description" content="Book an online astrology consultation with Mini Govil — India's trusted Vedic astrologer, tarot card reader &amp; numerologist. Hindi &amp; English. 10+ yrs, 5,000+ clients." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Mini Govil — Astro Tarot House" />
-  <meta property="og:description" content="Ancient wisdom for modern souls. Vedic astrology, tarot, numerology and spiritual courses." />
+  <meta property="og:title" content="Mini Govil — Best Vedic Astrologer India | Tarot &amp; Kundali Reading" />
+  <meta property="og:description" content="Ancient wisdom for modern souls. Vedic astrology, tarot card reading, kundali &amp; numerology by India's trusted guide Mini Govil." />
   <meta property="og:image" content="images/mivi-govil-avatar.jpg" />
   <meta property="og:url" content="https://www.miniastrotarot.com" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Mini Govil Astro Tarot House House",
+    "name": "Mini Govil Astro Tarot House",
     "@id": "https://www.miniastrotarot.com",
     "url": "https://www.miniastrotarot.com",
     "telephone": "+917411307621",
@@ -24,6 +24,70 @@
       {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "11:00", "closes": "17:00"}
     ],
     "sameAs": ["https://www.instagram.com/minigovilastro/"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What should I expect in my first session with Mini Govil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your first session is a calm, private conversation guided by your birth details. Mini will walk you through your Kundali or Tarot spread, explain key planetary influences, and answer your specific questions on career, relationships, or life direction. Sessions are available in Hindi and English, over phone or video call."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to know my exact birth time for a Vedic reading?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An exact birth time gives the most precise Kundali reading. However, if you don't know it, Mini can still provide valuable insights using your birth date and place. She also uses Tarot and numerology to fill the gaps and deliver meaningful guidance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Vedic astrology different from Western astrology?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vedic astrology (Jyotish) uses the sidereal zodiac — based on the actual position of stars — while Western astrology uses the tropical zodiac based on the seasons. Vedic astrology also incorporates the Moon sign, rising sign (Lagna), Nakshatra, and Dasha systems, making it highly precise for life timing and karmic patterns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can astrology predict my future?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Astrology reveals the energies and patterns at play in your life — it highlights opportunities, timing, and potential challenges. Think of it as a cosmic GPS: it shows the road, but you hold the steering wheel. Mini's approach is empowering, not fatalistic. She gives you the insight to make better decisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How soon can I book a session?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sessions can often be booked within 24–48 hours. Simply message Mini on WhatsApp (+91 74113 07621) with your preferred date, time, and concern. She is available Monday–Sunday, 11 AM–5 PM IST."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are online/phone consultations as effective as in-person?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. The accuracy of a Vedic or Tarot reading does not depend on physical proximity — it depends on your birth data and the reader's expertise. Thousands of Mini's clients across India and abroad have experienced transformative readings over phone and video call."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a tarot reading and astrology?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Astrology uses your birth chart to map long-term planetary cycles and karmic patterns. Tarot uses a deck of 78 symbolic cards to offer intuitive, present-moment guidance — ideal for specific questions or decisions. Mini often combines both for a layered, deeply accurate session."
+        }
+      }
+    ]
   }
   </script>
   <link rel="manifest" href="site.webmanifest" />
@@ -95,6 +159,14 @@
     .mosaic .big { grid-row: span 2; grid-column: span 1; }
     @keyframes mRot  { to { transform: rotate(360deg);  } }
     @keyframes mRotR { to { transform: rotate(-360deg); } }
+    /* FAQ accordion */
+    details.faq-item { border-bottom: 1px solid rgba(77,70,53,0.25); }
+    details.faq-item summary { list-style: none; cursor: pointer; }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item[open] summary .faq-icon { transform: rotate(45deg); }
+    .faq-icon { transition: transform 0.3s ease; display: inline-block; }
+    /* How It Works founder circle */
+    .founder-circle { width: 120px; height: 120px; border-radius: 9999px; overflow: hidden; border: 3px solid #f2ca50; flex-shrink: 0; }
   </style>
 </head>
 <body class="bg-background text-on-surface font-body overflow-x-hidden selection:bg-primary/30">
@@ -168,16 +240,19 @@
       </svg>
     </div>
 
-    <p class="font-headline text-primary text-xs tracking-[0.55em] uppercase mb-4 opacity-80">Ancient Wisdom for Modern Souls</p>
+    <p class="font-headline text-primary text-xs tracking-[0.55em] uppercase mb-4 opacity-80">Vedic Astrology · Tarot Card Reading · Kundali</p>
     <h1 class="font-headline text-6xl md:text-8xl lg:text-9xl text-on-surface leading-none mb-5 tracking-tight text-glow">Mini Govil</h1>
-    <p class="font-headline text-2xl md:text-3xl text-secondary italic font-light mb-8">The Cosmic Guide</p>
-    <p class="text-on-surface-variant text-lg max-w-xl mx-auto font-light mb-12 leading-relaxed">
+    <p class="font-headline text-2xl md:text-3xl text-secondary italic font-light mb-4">Vedic Astrologer · Tarot Reader · Numerologist</p>
+    <p class="text-on-surface-variant text-lg max-w-2xl mx-auto font-light mb-3 leading-relaxed">
+      Feeling lost? Career stuck? Relationship unclear? You don't have to navigate life's crossroads alone.
+    </p>
+    <p class="text-on-surface-variant text-base max-w-xl mx-auto font-light mb-12 leading-relaxed opacity-80">
       Vedic astrology · Tarot · Numerology · Past life regression · Reiki<br/>— illuminating paths since 2012.
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="https://wa.me/917411307621?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20book%20a%20reading"
          class="group relative px-10 py-4 rounded-full border border-primary text-primary overflow-hidden transition-all duration-500 hover:text-on-primary font-label tracking-widest uppercase text-xs">
-        <span class="relative z-10">Book a Reading</span>
+        <span class="relative z-10">Yes, I Want Clarity →</span>
         <div class="absolute inset-0 bg-gradient-to-r from-primary to-primary-container scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full"></div>
       </a>
       <a href="#reels" class="px-10 py-4 font-label tracking-widest uppercase text-xs text-primary-fixed-dim hover:text-primary transition-colors border-b border-transparent hover:border-primary/30 self-center">
@@ -192,19 +267,39 @@
   </div>
 </section>
 
+<!-- ═══════════════════ TRUST BAR ═══════════════════ -->
+<div class="bg-surface-container border-y border-outline-variant/20 py-3 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-center">
+      <span class="font-label text-xs text-on-surface-variant tracking-widest uppercase flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>5,000+ Seekers Guided
+      </span>
+      <span class="font-label text-xs text-on-surface-variant tracking-widest uppercase flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>10+ Years Experience
+      </span>
+      <span class="font-label text-xs text-on-surface-variant tracking-widest uppercase flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Available in Hindi &amp; English
+      </span>
+      <span class="font-label text-xs text-on-surface-variant tracking-widest uppercase flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Private &amp; Confidential
+      </span>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════════ FEATURE BENTO ═══════════════════ -->
 <section class="py-24 bg-surface-container-low reveal">
   <div class="max-w-7xl mx-auto px-6 md:px-12">
     <div class="text-center mb-16 space-y-3">
-      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Divine Offerings</h2>
-      <p class="text-on-surface-variant uppercase tracking-[0.2em] text-xs font-label">Unlock the secrets of your soul's blueprint</p>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Astrology, Tarot &amp; Spiritual Services</h2>
+      <p class="text-on-surface-variant text-base font-light max-w-2xl mx-auto">Mini Govil offers personalised online astrology consultations, tarot card readings, and numerology sessions — helping you find clarity on career, relationships, health, and life decisions.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:h-[820px]">
       <!-- Vedic Astrology – large -->
       <div class="md:col-span-7 rounded-xl overflow-hidden group relative flex flex-col justify-end p-10 min-h-[340px] gold-glow">
         <div class="absolute inset-0 z-0 transition-transform duration-1000 group-hover:scale-105">
-          <img src="images/banner.jpg" alt="Vedic Astrology" class="w-full h-full object-cover" />
+          <img src="images/banner.jpg" alt="Vedic astrology kundali reading by Mini Govil India" class="w-full h-full object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10"></div>
         </div>
         <div class="relative z-10 space-y-3">
@@ -213,7 +308,7 @@
           <p class="text-stone-300 max-w-sm font-light text-sm leading-relaxed">Deep-dive into your Kundali — planetary influences on career, health, and relationships decoded with ancient precision.</p>
           <a href="https://wa.me/917411307621?text=Book%20Vedic%20Astrology%20Session"
              class="inline-block mt-2 py-2 text-primary border-b border-primary/25 hover:border-primary transition-colors uppercase text-xs tracking-widest font-label">
-            Book Session →
+            Start My Reading →
           </a>
         </div>
       </div>
@@ -221,7 +316,7 @@
       <!-- Tarot – side -->
       <div class="md:col-span-5 rounded-xl overflow-hidden group relative flex flex-col justify-end p-10 min-h-[280px] gold-glow">
         <div class="absolute inset-0 z-0 transition-transform duration-1000 group-hover:scale-105">
-          <img src="images/tarot-2.jpg" alt="Tarot Reading" class="w-full h-full object-cover" />
+          <img src="images/tarot-2.jpg" alt="Tarot card reading session with Mini Govil" class="w-full h-full object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/10"></div>
         </div>
         <div class="relative z-10 space-y-2">
@@ -230,7 +325,7 @@
           <p class="text-stone-300 font-light text-sm">Intuitive readings for clarity on pressing life questions and spiritual crossroads.</p>
           <a href="https://wa.me/917411307621?text=Book%20Tarot%20Reading"
              class="inline-block mt-1 py-2 text-primary border-b border-primary/25 hover:border-primary transition-colors uppercase text-xs tracking-widest font-label">
-            Book Now →
+            Start My Reading →
           </a>
         </div>
       </div>
@@ -238,7 +333,7 @@
       <!-- Daily Horoscope – bottom full -->
       <div class="md:col-span-12 rounded-xl overflow-hidden group relative flex flex-col justify-end p-10 min-h-[260px] gold-glow">
         <div class="absolute inset-0 z-0 transition-transform duration-1000 group-hover:scale-105">
-          <img src="images/banner-2.png" alt="Daily Horoscope" class="w-full h-full object-cover" />
+          <img src="images/banner-2.png" alt="Daily horoscope and astrology insights by Mini Govil" class="w-full h-full object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/10"></div>
         </div>
         <div class="relative z-10 space-y-2">
@@ -259,16 +354,14 @@
 <section id="about" class="py-24 md:py-36 bg-surface reveal">
   <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
-    <!-- Image mosaic -->
-    <div class="grid grid-cols-2 gap-3" style="height:600px">
-      <!-- Left: tall main portrait -->
-      <div class="rounded-xl overflow-hidden border border-outline-variant/20 h-full">
+    <!-- Image tiles stacked -->
+    <div class="flex flex-col gap-3">
+      <div class="rounded-xl overflow-hidden border border-outline-variant/20" style="height:300px">
         <img src="images/629786738_18397531747176345_1326571572990856585_n.jpg"
-             alt="Mini Govil" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+             alt="Mini Govil — Vedic astrologer and tarot reader, India" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
       </div>
-      <!-- Right: conversational -->
-      <div class="rounded-xl overflow-hidden border border-outline-variant/20 h-full">
-        <img src="images/conversational.JPG" alt="Mini Govil in session"
+      <div class="rounded-xl overflow-hidden border border-outline-variant/20" style="height:300px">
+        <img src="images/conversational.JPG" alt="Mini Govil conducting an astrology consultation session"
              class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700" />
       </div>
     </div>
@@ -280,11 +373,15 @@
         <h2 class="font-headline text-4xl md:text-5xl text-on-surface leading-snug">Meet Mini</h2>
       </div>
       <p class="text-on-surface-variant text-lg leading-relaxed font-light">
-        A renowned Vedic Astrologer and master Tarot Reader with over a decade of experience, Mini Govil bridges the gap between the celestial realm and our earthly existence. Her readings are not merely predictions, but profound spiritual dialogues intended to empower and realign your energy with your highest destiny.
+        Mini Govil didn't discover the stars — the stars found her during one of the most uncertain chapters of her own life. Facing questions that no doctor, therapist, or well-wisher could answer, she turned inward — and found the ancient language of Vedic astrology waiting. That personal journey of healing and self-discovery is what drives every reading she gives today.
       </p>
-      <p class="text-on-surface-variant text-lg leading-relaxed font-light">
-        Specializing in karmic patterns and planetary transitions, she has guided thousands across the globe through life's most intricate labyrinths with clarity, compassion, and divine insight.
-      </p>
+      <!-- Mini's quote -->
+      <blockquote class="border-l-2 border-primary/40 pl-5">
+        <p class="font-headline italic text-lg text-primary/90 leading-relaxed">
+          "The planets don't control your fate — they reveal your potential. My job is to help you see it clearly and act on it with courage."
+        </p>
+        <footer class="mt-2 font-label text-xs text-on-surface-variant uppercase tracking-widest">— Mini Govil</footer>
+      </blockquote>
 
       <!-- Stats -->
       <div class="grid grid-cols-3 gap-4 py-4">
@@ -302,95 +399,189 @@
         </div>
       </div>
 
-      <!-- Specialties -->
-      <div class="grid grid-cols-2 gap-2.5">
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Vedic Astrology</div>
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Tarot Reading</div>
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Numerology</div>
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Face Reading</div>
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Past Life Regression</div>
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Reiki &amp; Hypnotherapy</div>
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Palmistry</div>
-        <div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></span>Vastu Shastra</div>
-      </div>
-
       <a href="https://wa.me/917411307621?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20book%20a%20reading"
          class="inline-flex items-center gap-4 text-primary font-label tracking-widest uppercase text-xs group/lnk mt-2">
-        Book a Session
+        Start My Reading
         <span class="h-px w-10 bg-primary transition-all duration-500 group-hover/lnk:w-20"></span>
       </a>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+<section class="py-24 bg-surface-container-low relative overflow-hidden reveal">
+  <!-- Background image overlay -->
+  <div class="absolute inset-0 z-0 opacity-10">
+    <img src="images/stock_1.jpg" alt="" class="w-full h-full object-cover object-center" />
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-surface-container-low via-surface-container-low/90 to-surface-container-low z-[1]"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-14 space-y-3">
+      <p class="font-label text-primary tracking-[0.3em] uppercase text-xs">Simple &amp; Transparent</p>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">How It Works</h2>
+      <p class="text-on-surface-variant text-lg font-light max-w-xl mx-auto">Three steps between you and the clarity you've been searching for.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+      <!-- Step 1 -->
+      <div class="flex flex-col items-center text-center space-y-4 p-8 rounded-xl bg-surface-container/60 border border-outline-variant/15 backdrop-blur-sm">
+        <div class="w-14 h-14 rounded-full border-2 border-primary flex items-center justify-center flex-shrink-0">
+          <span class="font-headline text-primary text-2xl">1</span>
+        </div>
+        <h3 class="font-headline text-xl text-on-surface">Share Your Details</h3>
+        <p class="text-on-surface-variant font-light text-sm leading-relaxed">Send Mini your date, time, and place of birth along with your key concern — via WhatsApp in just a few minutes. No long forms, no waiting rooms.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex flex-col items-center text-center space-y-4 p-8 rounded-xl bg-surface-container/60 border border-primary/20 backdrop-blur-sm gold-glow">
+        <div class="w-14 h-14 rounded-full border-2 border-primary bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <span class="font-headline text-primary text-2xl">2</span>
+        </div>
+        <h3 class="font-headline text-xl text-on-surface">Your Personalised Reading</h3>
+        <p class="text-on-surface-variant font-light text-sm leading-relaxed">Mini prepares a bespoke Vedic Kundali or Tarot spread tailored to your question. Your private session takes place over call or video — in Hindi or English, at a time that suits you.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col items-center text-center space-y-4 p-8 rounded-xl bg-surface-container/60 border border-outline-variant/15 backdrop-blur-sm">
+        <div class="w-14 h-14 rounded-full border-2 border-primary flex items-center justify-center flex-shrink-0">
+          <span class="font-headline text-primary text-2xl">3</span>
+        </div>
+        <h3 class="font-headline text-xl text-on-surface">Walk Away with Clarity</h3>
+        <p class="text-on-surface-variant font-light text-sm leading-relaxed">Leave the session with concrete insights, practical remedies, and a clear sense of direction — no vague platitudes, just honest, actionable cosmic wisdom.</p>
+      </div>
+    </div>
+
+    <!-- Founder callout -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-center sm:text-left">
+      <div class="founder-circle">
+        <img src="images/629786738_18397531747176345_1326571572990856585_n.jpg"
+             alt="Mini Govil — best astrologer India, founder of Astro Tarot House"
+             class="w-full h-full object-cover object-top" />
+      </div>
+      <div class="space-y-2 max-w-sm">
+        <p class="font-headline italic text-lg text-secondary leading-snug">"Every chart tells a story. Let's read yours together."</p>
+        <p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">Mini Govil · Vedic Astrologer &amp; Tarot Reader</p>
+        <a href="https://wa.me/917411307621?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20book%20a%20reading"
+           class="inline-flex items-center gap-3 text-primary font-label tracking-widest uppercase text-xs group/lnk mt-1">
+          Book My Session
+          <span class="h-px w-8 bg-primary transition-all duration-500 group-hover/lnk:w-16"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════════ CONSULTATIONS ═══════════════════ -->
-<section id="consultations" class="py-24 bg-surface-container-low reveal">
+<section id="consultations" class="py-24 bg-surface reveal">
   <div class="max-w-7xl mx-auto px-6 md:px-12">
     <div class="text-center mb-14 space-y-3">
       <p class="font-label text-primary tracking-[0.3em] uppercase text-xs">Sacred</p>
       <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Consultations</h2>
-      <p class="text-on-surface-variant max-w-xl mx-auto text-lg font-light">Bespoke readings combining ancient Vedic wisdom with intuitive Tarot insights.</p>
+      <p class="text-on-surface-variant max-w-xl mx-auto text-lg font-light">Bespoke readings combining ancient Vedic wisdom with intuitive Tarot insights — each session crafted around your unique life question.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <div class="group relative overflow-hidden rounded-xl bg-surface-container p-9 border border-outline-variant/10 transition-all duration-500 hover:-translate-y-2 flex flex-col gold-glow">
         <span class="material-symbols-outlined text-5xl text-primary mb-5" style="font-variation-settings:'wght' 200">favorite</span>
         <h3 class="font-headline text-2xl mb-3 text-secondary">Relationships</h3>
-        <p class="text-on-surface-variant mb-8 leading-relaxed font-light text-sm flex-grow">Explore karmic bonds and soul connections. Gain clarity on partnership dynamics and the journey toward harmonious love.</p>
+        <p class="text-on-surface-variant mb-4 leading-relaxed font-light text-sm flex-grow">Struggling with a relationship — romantic, family, or professional? Mini reads both charts to show you what's really happening between you and the other person, and what you can change.</p>
+        <div class="mb-6">
+          <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">You will discover:</p>
+          <ul class="space-y-1 text-sm text-on-surface-variant font-light">
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>Why certain patterns keep repeating in your relationships — and how to break them</li>
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>Whether your current partner is cosmically aligned — and what to do either way</li>
+          </ul>
+        </div>
         <a href="https://wa.me/917411307621?text=Book%20Relationships%20consultation"
-           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Book Now</a>
+           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Yes, I Want Clarity →</a>
       </div>
       <div class="group relative overflow-hidden rounded-xl bg-surface-container p-9 border border-outline-variant/10 transition-all duration-500 hover:-translate-y-2 flex flex-col gold-glow">
         <span class="material-symbols-outlined text-5xl text-primary mb-5" style="font-variation-settings:'wght' 200">menu_book</span>
         <h3 class="font-headline text-2xl mb-3 text-secondary">Education</h3>
-        <p class="text-on-surface-variant mb-8 leading-relaxed font-light text-sm flex-grow">Identify auspicious academic paths. Understand planetary influences on learning, focus, and intellectual growth.</p>
+        <p class="text-on-surface-variant mb-4 leading-relaxed font-light text-sm flex-grow">Confused about which subject to study or which direction to take? Your birth chart reveals your natural strengths and the best timing for exams, admissions, and study milestones.</p>
+        <div class="mb-6">
+          <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">You will discover:</p>
+          <ul class="space-y-1 text-sm text-on-surface-variant font-light">
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>The field of study or specialisation your chart points you toward</li>
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>The most auspicious windows for exams, admissions, and academic milestones</li>
+          </ul>
+        </div>
         <a href="https://wa.me/917411307621?text=Book%20Education%20consultation"
-           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Book Now</a>
+           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Yes, I Want Clarity →</a>
       </div>
       <div class="group relative overflow-hidden rounded-xl bg-surface-container p-9 border border-outline-variant/10 transition-all duration-500 hover:-translate-y-2 flex flex-col gold-glow">
         <span class="material-symbols-outlined text-5xl text-primary mb-5" style="font-variation-settings:'wght' 200">self_improvement</span>
         <h3 class="font-headline text-2xl mb-3 text-secondary">Health</h3>
-        <p class="text-on-surface-variant mb-8 leading-relaxed font-light text-sm flex-grow">A celestial perspective on well-being. Align your physical vitality with cosmic rhythms for holistic balance.</p>
+        <p class="text-on-surface-variant mb-4 leading-relaxed font-light text-sm flex-grow">Dealing with low energy, recurring illness, or stress that won't quit? Vedic astrology can point to which planetary cycles are affecting your body — and simple steps to restore balance.</p>
+        <div class="mb-6">
+          <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">You will discover:</p>
+          <ul class="space-y-1 text-sm text-on-surface-variant font-light">
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>Which planetary placements may be affecting your energy, sleep, or recurring health patterns</li>
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>Simple Vedic remedies to restore balance and build resilience — starting immediately</li>
+          </ul>
+        </div>
         <a href="https://wa.me/917411307621?text=Book%20Health%20consultation"
-           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Book Now</a>
+           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Yes, I Want Clarity →</a>
       </div>
       <div class="group relative overflow-hidden rounded-xl bg-surface-container p-9 border border-outline-variant/10 transition-all duration-500 hover:-translate-y-2 flex flex-col gold-glow">
         <span class="material-symbols-outlined text-5xl text-primary mb-5" style="font-variation-settings:'wght' 200">all_inclusive</span>
         <h3 class="font-headline text-2xl mb-3 text-secondary">Marriage</h3>
-        <p class="text-on-surface-variant mb-8 leading-relaxed font-light text-sm flex-grow">Matchmaking and timing for sacred unions. Analyze compatibility and resolve celestial obstacles.</p>
+        <p class="text-on-surface-variant mb-4 leading-relaxed font-light text-sm flex-grow">Matchmaking and timing for sacred unions. Analyze compatibility and resolve celestial obstacles.</p>
+        <div class="mb-6">
+          <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">You will discover:</p>
+          <ul class="space-y-1 text-sm text-on-surface-variant font-light">
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>The compatibility score between your charts — and any doshas or remedies needed</li>
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>The most auspicious muhurtas (timing) for your wedding or engagement</li>
+          </ul>
+        </div>
         <a href="https://wa.me/917411307621?text=Book%20Marriage%20consultation"
-           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Book Now</a>
+           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Yes, I Want Clarity →</a>
       </div>
       <div class="group relative overflow-hidden rounded-xl bg-surface-container p-9 border border-outline-variant/10 transition-all duration-500 hover:-translate-y-2 flex flex-col gold-glow">
         <span class="material-symbols-outlined text-5xl text-primary mb-5" style="font-variation-settings:'wght' 200">diamond</span>
         <h3 class="font-headline text-2xl mb-3 text-secondary">Wealth</h3>
-        <p class="text-on-surface-variant mb-8 leading-relaxed font-light text-sm flex-grow">Uncover your financial blueprint. Insights into prosperity, investment timing, and material abundance.</p>
+        <p class="text-on-surface-variant mb-4 leading-relaxed font-light text-sm flex-grow">Uncover your financial blueprint. Insights into prosperity, investment timing, and material abundance.</p>
+        <div class="mb-6">
+          <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">You will discover:</p>
+          <ul class="space-y-1 text-sm text-on-surface-variant font-light">
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>Your chart's strongest wealth-building houses and the planets activating them right now</li>
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>The ideal timing for investments, business launches, or financial decisions in the year ahead</li>
+          </ul>
+        </div>
         <a href="https://wa.me/917411307621?text=Book%20Wealth%20consultation"
-           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Book Now</a>
+           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Yes, I Want Clarity →</a>
       </div>
       <div class="group relative overflow-hidden rounded-xl bg-surface-container p-9 border border-outline-variant/10 transition-all duration-500 hover:-translate-y-2 flex flex-col gold-glow">
         <span class="material-symbols-outlined text-5xl text-primary mb-5" style="font-variation-settings:'wght' 200">work_outline</span>
         <h3 class="font-headline text-2xl mb-3 text-secondary">Career</h3>
-        <p class="text-on-surface-variant mb-8 leading-relaxed font-light text-sm flex-grow">Discover your true calling. Guidance on professional transitions, leadership potential, and timing.</p>
+        <p class="text-on-surface-variant mb-4 leading-relaxed font-light text-sm flex-grow">Discover your true calling. Guidance on professional transitions, leadership potential, and timing.</p>
+        <div class="mb-6">
+          <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">You will discover:</p>
+          <ul class="space-y-1 text-sm text-on-surface-variant font-light">
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>Which career paths your birth chart is wired to excel in — and which to avoid</li>
+            <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-2 flex-shrink-0"></span>Whether now is the right time to switch jobs, start a business, or ask for a promotion</li>
+          </ul>
+        </div>
         <a href="https://wa.me/917411307621?text=Book%20Career%20consultation"
-           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Book Now</a>
+           class="w-full py-3 px-5 rounded-full border border-primary text-primary font-label text-xs tracking-widest uppercase transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary text-center block">Yes, I Want Clarity →</a>
       </div>
     </div>
 
     <!-- Royal Reading featured -->
     <div class="mt-12 rounded-xl overflow-hidden border border-outline-variant/10 grid grid-cols-1 lg:grid-cols-2 gold-glow">
       <div class="relative h-72 lg:h-auto overflow-hidden">
-        <img src="images/vedic-1.jpg" alt="Royal Reading" class="w-full h-full object-cover opacity-80" />
+        <img src="images/vedic-1.jpg" alt="Royal Astral Reading — premium Vedic astrology and tarot session by Mini Govil" class="w-full h-full object-cover opacity-80" />
         <div class="absolute inset-0 bg-gradient-to-r from-transparent to-surface-container lg:block hidden"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent lg:hidden"></div>
       </div>
       <div class="bg-surface-container p-10 md:p-14 flex flex-col justify-center space-y-5">
         <p class="font-label text-primary text-xs tracking-[0.3em] uppercase">Premium Experience</p>
         <h3 class="font-headline text-3xl md:text-4xl leading-tight">The Royal Astral Reading</h3>
-        <p class="text-on-surface-variant text-base leading-relaxed font-light">Our most comprehensive 90-minute session — complete birth chart analysis combined with a 12-card Celtic Cross Tarot spread. Perfect for those at a major crossroads seeking deep, transformative clarity.</p>
+        <p class="text-on-surface-variant text-base leading-relaxed font-light">Our most comprehensive 90-minute session — complete Kundali birth chart analysis combined with a 12-card Celtic Cross Tarot spread. Perfect for those at a major crossroads seeking deep, transformative clarity on every area of life.</p>
         <a href="https://wa.me/917411307621?text=Book%20Royal%20Astral%20Reading"
            class="inline-flex items-center gap-4 text-primary font-label tracking-widest uppercase text-sm group/lnk w-fit">
-          Book the Royal Reading
+          Start My Reading
           <span class="h-px w-10 bg-primary transition-all duration-300 group-hover/lnk:w-20"></span>
         </a>
       </div>
@@ -399,30 +590,37 @@
 </section>
 
 <!-- ═══════════════════ COURSES ═══════════════════ -->
-<section id="courses" class="py-24 bg-surface reveal">
+<section id="courses" class="py-24 bg-surface-container-low reveal">
   <div class="max-w-7xl mx-auto px-6 md:px-12">
     <div class="mb-14 space-y-3">
       <p class="font-label text-primary tracking-[0.3em] uppercase text-xs">Illuminating the Path</p>
-      <h2 class="font-headline text-4xl md:text-6xl tracking-tight leading-tight">Master the Ancient<br /><span class="italic text-primary">Celestial Arts</span></h2>
-      <p class="text-on-surface-variant text-lg font-light leading-relaxed">Certification courses from beginner to professional — astrology, tarot &amp; face reading.</p>
+      <h2 class="font-headline text-4xl md:text-6xl tracking-tight leading-tight">Learn Astrology &amp; Tarot<br /><span class="italic text-primary">From Beginner to Pro</span></h2>
+      <p class="text-on-surface-variant text-lg font-light leading-relaxed">No experience needed. Mini's certification courses in Vedic astrology, tarot card reading, and face reading are designed for complete beginners and those looking to go professional — available in Hindi or English.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Vedic -->
       <div class="group bg-surface-container rounded-xl border border-outline-variant/20 overflow-hidden flex flex-col hover:bg-surface-container-high transition-all duration-500">
         <div class="h-52 overflow-hidden">
-          <img src="images/stock_3.png" alt="Vedic Astrology Course"
+          <img src="images/stock_3.png" alt="Vedic astrology certification course by Mini Govil India"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75" />
         </div>
         <div class="p-9 flex flex-col flex-grow">
           <span class="material-symbols-outlined text-primary text-3xl mb-4">star_half</span>
           <h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Vedic Astrology</h3>
-          <p class="text-on-surface-variant font-light leading-relaxed text-sm mb-6 flex-grow">A comprehensive certification into the Sidereal system. Master the foundations of Indian astrology.</p>
-          <ul class="text-xs text-stone-400 space-y-1.5 mb-8">
+          <p class="text-on-surface-variant font-light leading-relaxed text-sm mb-4 flex-grow">A comprehensive certification into the Sidereal system. Master the foundations of Indian astrology.</p>
+          <ul class="text-xs text-stone-400 space-y-1.5 mb-5">
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Kundli Construction</li>
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Grahas &amp; Rashis</li>
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Dasha Systems &amp; Remedies</li>
           </ul>
+          <div class="mb-6">
+            <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">What you'll be able to do:</p>
+            <ul class="space-y-1 text-xs text-on-surface-variant font-light">
+              <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-1.5 flex-shrink-0"></span>Read and interpret a full Kundali chart for yourself and others</li>
+              <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-1.5 flex-shrink-0"></span>Prescribe accurate Vedic remedies (gemstones, mantras, rituals) with confidence</li>
+            </ul>
+          </div>
           <a href="https://wa.me/917411307621?text=I%20want%20Vedic%20Astrology%20course%20details"
              class="border border-primary text-primary px-7 py-3 rounded-full font-label text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all duration-300 w-fit">
             Know More
@@ -433,18 +631,25 @@
       <!-- Tarot -->
       <div class="group bg-surface-container rounded-xl border border-outline-variant/20 overflow-hidden flex flex-col hover:bg-surface-container-high transition-all duration-500">
         <div class="h-52 overflow-hidden">
-          <img src="images/tarot_1.jpg" alt="Tarot Course"
+          <img src="images/tarot_1.jpg" alt="Tarot card reading course by Mini Govil — learn tarot in Hindi and English"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75" />
         </div>
         <div class="p-9 flex flex-col flex-grow">
           <span class="material-symbols-outlined text-primary text-3xl mb-4">style</span>
           <h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Tarot Card Reading</h3>
-          <p class="text-on-surface-variant font-light leading-relaxed text-sm mb-6 flex-grow">Deep dive into Rider-Waite symbolism. Learn to read archetypes and navigate intuitive timelines.</p>
-          <ul class="text-xs text-stone-400 space-y-1.5 mb-8">
+          <p class="text-on-surface-variant font-light leading-relaxed text-sm mb-4 flex-grow">Deep dive into Rider-Waite symbolism. Learn to read archetypes and navigate intuitive timelines.</p>
+          <ul class="text-xs text-stone-400 space-y-1.5 mb-5">
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Major &amp; Minor Arcana</li>
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Advanced Spreads</li>
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Professional Client Ethics</li>
           </ul>
+          <div class="mb-6">
+            <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">What you'll be able to do:</p>
+            <ul class="space-y-1 text-xs text-on-surface-variant font-light">
+              <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-1.5 flex-shrink-0"></span>Conduct professional tarot readings for clients using multiple spread techniques</li>
+              <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-1.5 flex-shrink-0"></span>Build a paying practice as a certified tarot reader — from home or online</li>
+            </ul>
+          </div>
           <a href="https://wa.me/917411307621?text=I%20want%20Tarot%20Card%20Reading%20course%20details"
              class="border border-primary text-primary px-7 py-3 rounded-full font-label text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all duration-300 w-fit">
             Know More
@@ -455,18 +660,25 @@
       <!-- Face Reading -->
       <div class="group bg-surface-container rounded-xl border border-outline-variant/20 overflow-hidden flex flex-col hover:bg-surface-container-high transition-all duration-500">
         <div class="h-52 overflow-hidden">
-          <img src="images/stock_2.jpg" alt="Face Reading Course"
+          <img src="images/stock_2.jpg" alt="Face reading physiognomy course by Mini Govil India"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-75" />
         </div>
         <div class="p-9 flex flex-col flex-grow">
           <span class="material-symbols-outlined text-primary text-3xl mb-4">visibility</span>
           <h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Face Reading</h3>
-          <p class="text-on-surface-variant font-light leading-relaxed text-sm mb-6 flex-grow">The ancient art of Physiognomy — discover how the features of the soul are etched into the physical form.</p>
-          <ul class="text-xs text-stone-400 space-y-1.5 mb-8">
+          <p class="text-on-surface-variant font-light leading-relaxed text-sm mb-4 flex-grow">The ancient art of Physiognomy — discover how the features of the soul are etched into the physical form.</p>
+          <ul class="text-xs text-stone-400 space-y-1.5 mb-5">
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Facial Mapping</li>
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Elemental Features</li>
             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span>Character Profiling</li>
           </ul>
+          <div class="mb-6">
+            <p class="text-xs text-primary/70 uppercase tracking-widest font-label mb-2">What you'll be able to do:</p>
+            <ul class="space-y-1 text-xs text-on-surface-variant font-light">
+              <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-1.5 flex-shrink-0"></span>Read a person's personality, strengths, and tendencies from facial features alone</li>
+              <li class="flex items-start gap-2"><span class="w-1 h-1 bg-primary/60 rounded-full mt-1.5 flex-shrink-0"></span>Add face reading as a powerful complementary skill to astrology or tarot sessions</li>
+            </ul>
+          </div>
           <a href="https://wa.me/917411307621?text=I%20want%20Face%20Reading%20course%20details"
              class="border border-primary text-primary px-7 py-3 rounded-full font-label text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all duration-300 w-fit">
             Know More
@@ -477,243 +689,110 @@
   </div>
 </section>
 
-<!-- ═══════════════════ REELS ═══════════════════ -->
-<section id="reels" class="py-24 bg-surface-container-low reveal">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-      <div class="space-y-2">
-        <p class="font-label text-primary tracking-[0.3em] uppercase text-xs">From the Universe</p>
-        <h2 class="font-headline text-4xl md:text-5xl text-on-surface tracking-tight">Celestial Reels</h2>
-        <p class="text-on-surface-variant font-light">Tarot insights, astrology explainers, and festive wisdom.</p>
-      </div>
-      <a href="https://www.instagram.com/minigovilastro/" target="_blank" rel="noopener"
-         class="font-label tracking-widest uppercase text-xs text-primary border-b border-primary/30 hover:border-primary pb-0.5 transition-colors self-start md:self-end whitespace-nowrap">
-        See all on Instagram →
-      </a>
-    </div>
 
-    <!-- Scrollable reel row -->
-    <div class="reel-row">
-
-      <!-- Tarot Reel -->
-      <div class="reel-item">
-        <div class="rounded-xl overflow-hidden bg-surface-container border border-outline-variant/15" style="height:500px">
-          <video controls preload="metadata" playsinline
-                 class="w-full h-full object-cover"
-                 >
-            <source src="videos/TAROT%20REEL%20%233.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <p class="mt-3 font-headline italic text-base text-on-surface">What the cards say about your next chapter</p>
-        <p class="font-label text-xs tracking-widest uppercase text-on-surface-variant mt-1">Tarot Reading</p>
-      </div>
-
-      <!-- Horoscope Wedding -->
-      <div class="reel-item">
-        <div class="rounded-xl overflow-hidden bg-surface-container border border-outline-variant/15" style="height:500px">
-          <video controls preload="metadata" playsinline
-                 class="w-full h-full object-cover"
-                 >
-            <source src="videos/horroscope%20wedding%20Mini%20govil%20post%201%20draft.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <p class="mt-3 font-headline italic text-base text-on-surface">Is the universe blessing your union?</p>
-        <p class="font-label text-xs tracking-widest uppercase text-on-surface-variant mt-1">Marriage &amp; Horoscope</p>
-      </div>
-
-      <!-- Episode 2 -->
-      <div class="reel-item">
-        <div class="rounded-xl overflow-hidden bg-surface-container border border-outline-variant/15" style="height:500px">
-          <video controls preload="metadata" playsinline
-                 class="w-full h-full object-cover"
-                 >
-            <source src="videos/%23(%20Episode%202).mp4" type="video/mp4" />
-          </video>
-        </div>
-        <p class="mt-3 font-headline italic text-base text-on-surface">Your planets are speaking — are you listening?</p>
-        <p class="font-label text-xs tracking-widest uppercase text-on-surface-variant mt-1">Astro Series · Ep. 2</p>
-      </div>
-
-      <!-- Holi Reel -->
-      <div class="reel-item">
-        <div class="rounded-xl overflow-hidden bg-surface-container border border-outline-variant/15" style="height:500px">
-          <video controls preload="metadata" playsinline
-                 class="w-full h-full object-cover"
-                 >
-            <source src="videos/holi%20reel%20Mini%20Govil%20%231.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <p class="mt-3 font-headline italic text-base text-on-surface">Colours, cosmos & celebration — what Holi reveals</p>
-        <p class="font-label text-xs tracking-widest uppercase text-on-surface-variant mt-1">Festive Wisdom · Holi</p>
-      </div>
-
-      <!-- Shivratri -->
-      <div class="reel-item">
-        <div class="rounded-xl overflow-hidden bg-surface-container border border-outline-variant/15" style="height:500px">
-          <video controls preload="metadata" playsinline
-                 class="w-full h-full object-cover"
-                 >
-            <source src="videos/shivratri%20reel.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <p class="mt-3 font-headline italic text-base text-on-surface">The most powerful night for manifestation — don't miss it</p>
-        <p class="font-label text-xs tracking-widest uppercase text-on-surface-variant mt-1">Festive Wisdom · Shivratri</p>
-      </div>
-
-    </div>
-    <p class="text-on-surface-variant/40 text-xs mt-4 font-label">← Scroll to see more</p>
-  </div>
-</section>
-
-<!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
-<section id="testimonials" class="py-24 bg-surface-container-low reveal">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section id="faq" class="py-24 bg-surface reveal">
+  <div class="max-w-3xl mx-auto px-6 md:px-12">
     <div class="text-center mb-14 space-y-3">
-      <p class="font-label text-primary tracking-[0.3em] uppercase text-xs">Real Stories</p>
-      <h2 class="font-headline text-4xl md:text-5xl text-on-surface tracking-tight">Voices of <span class="italic text-primary-fixed-dim">Transformation</span></h2>
-      <p class="text-on-surface-variant font-light">Hear from those whose lives were transformed.</p>
+      <p class="font-label text-primary tracking-[0.3em] uppercase text-xs">Your Questions Answered</p>
+      <h2 class="font-headline text-4xl md:text-5xl text-on-surface tracking-tight">Frequently Asked <span class="italic text-primary-fixed-dim">Questions</span></h2>
+      <p class="text-on-surface-variant font-light">Everything you need to know before your first session with Mini Govil.</p>
     </div>
 
-    <!-- Row 1: two video testimonials -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+    <div class="space-y-0">
 
-      <!-- Video 1 -->
-      <div class="rounded-xl overflow-hidden bg-surface-container border border-outline-variant/15 gold-glow flex flex-col">
-        <div class="relative cursor-pointer vid-thumb-wrap" style="height:340px" onclick="playTestimonial(this)">
-          <!-- Seeked video frame as face thumbnail -->
-          <video class="vid-thumb w-full h-full object-cover object-top"
-                 preload="metadata" muted playsinline
-                 data-seek="3"
-                 style="pointer-events:none">
-            <source src="videos/Mini%20testimony%20%231.mp4" type="video/mp4" />
-          </video>
-          <!-- Dark gradient overlay -->
-          <div class="thumb-overlay absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-between p-7">
-            <div class="flex gap-1">
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-            </div>
-            <div class="space-y-4">
-              <p class="font-headline italic text-xl text-white leading-snug">"She saw what no one else could see — and it changed everything."</p>
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-full border-2 border-primary bg-black/30 flex items-center justify-center hover:bg-primary transition-all duration-300 group/play">
-                  <span class="material-symbols-outlined text-primary group-hover/play:text-on-primary text-xl transition-colors" style="font-variation-settings:'FILL' 1">play_arrow</span>
-                </div>
-                <div>
-                  <p class="font-label font-bold text-white uppercase tracking-wider text-xs">Verified Client</p>
-                  <p class="text-primary text-xs tracking-widest uppercase mt-0.5">New Delhi · 1:16 min</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Full video (swaps in on click) -->
-          <video preload="none" playsinline controls
-                 class="vid-full w-full h-full object-cover absolute inset-0 hidden">
-            <source src="videos/Mini%20testimony%20%231.mp4" type="video/mp4" />
-          </video>
+      <details class="faq-item group">
+        <summary class="flex items-center justify-between py-5 gap-4">
+          <h3 class="font-headline text-lg text-on-surface group-open:text-primary transition-colors">What should I expect in my first session with Mini Govil?</h3>
+          <span class="faq-icon text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center border border-primary/30 rounded-full text-lg leading-none">+</span>
+        </summary>
+        <div class="pb-5 text-on-surface-variant font-light leading-relaxed text-sm">
+          Your first session is a calm, private conversation guided by your birth details. Mini will walk you through your Kundali or Tarot spread, explain key planetary influences, and answer your specific questions on career, relationships, or life direction. Sessions are available in Hindi and English, over phone or video call. Expect honesty, warmth, and actionable insight — not vague predictions.
         </div>
-      </div>
+      </details>
 
-      <!-- Video 2 -->
-      <div class="rounded-xl overflow-hidden bg-surface-container border border-outline-variant/15 gold-glow flex flex-col">
-        <div class="relative cursor-pointer vid-thumb-wrap" style="height:340px" onclick="playTestimonial(this)">
-          <video class="vid-thumb w-full h-full object-cover object-top"
-                 preload="metadata" muted playsinline
-                 data-seek="3"
-                 style="pointer-events:none">
-            <source src="videos/mini%20testimonial%20%232%20.mp4" type="video/mp4" />
-          </video>
-          <div class="thumb-overlay absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-between p-7">
-            <div class="flex gap-1">
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-              <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-            </div>
-            <div class="space-y-4">
-              <p class="font-headline italic text-xl text-white leading-snug">"I came with doubt. I left with direction. Mini doesn't predict — she reveals."</p>
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-full border-2 border-primary bg-black/30 flex items-center justify-center hover:bg-primary transition-all duration-300 group/play">
-                  <span class="material-symbols-outlined text-primary group-hover/play:text-on-primary text-xl transition-colors" style="font-variation-settings:'FILL' 1">play_arrow</span>
-                </div>
-                <div>
-                  <p class="font-label font-bold text-white uppercase tracking-wider text-xs">Verified Client</p>
-                  <p class="text-primary text-xs tracking-widest uppercase mt-0.5">Mumbai · 2:24 min</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <video preload="none" playsinline controls
-                 class="vid-full w-full h-full object-cover absolute inset-0 hidden">
-            <source src="videos/mini%20testimonial%20%232%20.mp4" type="video/mp4" />
-          </video>
+      <details class="faq-item group">
+        <summary class="flex items-center justify-between py-5 gap-4">
+          <h3 class="font-headline text-lg text-on-surface group-open:text-primary transition-colors">Do I need to know my exact birth time for a Vedic reading?</h3>
+          <span class="faq-icon text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center border border-primary/30 rounded-full text-lg leading-none">+</span>
+        </summary>
+        <div class="pb-5 text-on-surface-variant font-light leading-relaxed text-sm">
+          An exact birth time gives the most precise Kundali reading, as it fixes the Lagna (rising sign) accurately. However, if you don't know it, Mini can still provide valuable insights using your birth date and place. She also uses Tarot and numerology to fill the gaps and deliver meaningful, grounded guidance.
         </div>
-      </div>
+      </details>
+
+      <details class="faq-item group">
+        <summary class="flex items-center justify-between py-5 gap-4">
+          <h3 class="font-headline text-lg text-on-surface group-open:text-primary transition-colors">How is Vedic astrology different from Western astrology?</h3>
+          <span class="faq-icon text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center border border-primary/30 rounded-full text-lg leading-none">+</span>
+        </summary>
+        <div class="pb-5 text-on-surface-variant font-light leading-relaxed text-sm">
+          Vedic astrology (Jyotish) uses the sidereal zodiac — based on the actual position of stars — while Western astrology uses the tropical zodiac based on the seasons. Vedic astrology also incorporates the Moon sign, rising sign (Lagna), Nakshatra constellations, and Dasha timing systems, making it exceptionally precise for life timing, karmic patterns, and spiritual insights. Your Vedic sun sign may differ from your Western one by roughly one zodiac sign.
+        </div>
+      </details>
+
+      <details class="faq-item group">
+        <summary class="flex items-center justify-between py-5 gap-4">
+          <h3 class="font-headline text-lg text-on-surface group-open:text-primary transition-colors">Can astrology predict my future?</h3>
+          <span class="faq-icon text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center border border-primary/30 rounded-full text-lg leading-none">+</span>
+        </summary>
+        <div class="pb-5 text-on-surface-variant font-light leading-relaxed text-sm">
+          Astrology reveals the energies and patterns at play in your life — it highlights opportunities, likely timing, and potential challenges. Think of it as a cosmic GPS: it shows the road, but you hold the steering wheel. Mini's approach is always empowering, not fatalistic. She gives you the insight to make better, more conscious decisions.
+        </div>
+      </details>
+
+      <details class="faq-item group">
+        <summary class="flex items-center justify-between py-5 gap-4">
+          <h3 class="font-headline text-lg text-on-surface group-open:text-primary transition-colors">How soon can I book a session?</h3>
+          <span class="faq-icon text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center border border-primary/30 rounded-full text-lg leading-none">+</span>
+        </summary>
+        <div class="pb-5 text-on-surface-variant font-light leading-relaxed text-sm">
+          Sessions can often be booked within 24–48 hours. Simply message Mini on WhatsApp (+91 74113 07621) with your preferred date, time, and the concern you'd like addressed. She is available Monday through Sunday, 11 AM–5 PM IST.
+        </div>
+      </details>
+
+      <details class="faq-item group">
+        <summary class="flex items-center justify-between py-5 gap-4">
+          <h3 class="font-headline text-lg text-on-surface group-open:text-primary transition-colors">Are online / phone consultations as effective as in-person?</h3>
+          <span class="faq-icon text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center border border-primary/30 rounded-full text-lg leading-none">+</span>
+        </summary>
+        <div class="pb-5 text-on-surface-variant font-light leading-relaxed text-sm">
+          Absolutely. The accuracy of a Vedic or Tarot reading does not depend on physical proximity — it depends on your birth data and the reader's expertise. Thousands of Mini's clients across India and abroad have experienced deeply transformative readings over phone and video call. Distance is no barrier to the cosmos.
+        </div>
+      </details>
+
+      <details class="faq-item group">
+        <summary class="flex items-center justify-between py-5 gap-4">
+          <h3 class="font-headline text-lg text-on-surface group-open:text-primary transition-colors">What is the difference between a tarot reading and astrology?</h3>
+          <span class="faq-icon text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center border border-primary/30 rounded-full text-lg leading-none">+</span>
+        </summary>
+        <div class="pb-5 text-on-surface-variant font-light leading-relaxed text-sm">
+          Astrology uses your birth chart to map long-term planetary cycles, karmic patterns, and life timing. Tarot uses a deck of 78 symbolic cards to offer intuitive, present-moment guidance — it is ideal for specific questions, decisions, or gaining clarity on an immediate situation. Mini often combines both modalities in a single session for a layered, deeply accurate reading.
+        </div>
+      </details>
 
     </div>
 
-    <!-- Row 2: three text testimonials -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-
-      <div class="bg-surface-container p-8 rounded-xl relative flex flex-col justify-between group hover:bg-surface-container-high transition-all duration-500">
-        <span class="material-symbols-outlined text-primary/15 text-5xl absolute top-5 right-6" style="font-variation-settings:'FILL' 1">format_quote</span>
-        <div>
-          <div class="flex gap-1 mb-4">
-            <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-          </div>
-          <p class="font-headline italic text-lg text-on-surface leading-relaxed mb-4">"Mini's reading was incredibly accurate. She predicted a career shift that happened exactly as she described."</p>
-        </div>
-        <div class="border-t border-outline-variant/30 pt-4">
-          <p class="font-label font-bold text-on-background uppercase tracking-wider text-sm">Priya S.</p>
-          <p class="text-primary text-xs tracking-widest uppercase mt-1">Spiritual Seeker</p>
-        </div>
-      </div>
-
-      <div class="bg-surface-container-high p-8 rounded-xl relative flex flex-col justify-between border-t-2 border-primary/20 hover:bg-surface-container-highest transition-all duration-500">
-        <span class="material-symbols-outlined text-primary/15 text-5xl absolute top-5 right-6" style="font-variation-settings:'FILL' 1">auto_awesome</span>
-        <div>
-          <div class="flex gap-1 mb-4">
-            <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-          </div>
-          <p class="font-headline italic text-lg text-on-surface leading-relaxed mb-4">"Mini's compassionate analysis of our charts brought clarity and helped us reconnect on a deeper level."</p>
-        </div>
-        <div class="border-t border-outline-variant/30 pt-4">
-          <p class="font-label font-bold text-on-background uppercase tracking-wider text-sm">Rahul M.</p>
-          <p class="text-primary text-xs tracking-widest uppercase mt-1">Business Executive</p>
-        </div>
-      </div>
-
-      <div class="bg-surface-container p-8 rounded-xl relative flex flex-col justify-between hover:bg-surface-container-high transition-all duration-500">
-        <span class="material-symbols-outlined text-primary/15 text-5xl absolute top-5 right-6" style="font-variation-settings:'FILL' 1">ac_unit</span>
-        <div>
-          <div class="flex gap-1 mb-4">
-            <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">star</span>
-          </div>
-          <p class="font-headline italic text-lg text-on-surface leading-relaxed mb-4">"The Vedic Astrology course transformed my understanding of the cosmos. Mini is a gifted teacher."</p>
-        </div>
-        <div class="border-t border-outline-variant/30 pt-4">
-          <p class="font-label font-bold text-on-background uppercase tracking-wider text-sm">Ananya K.</p>
-          <p class="text-primary text-xs tracking-widest uppercase mt-1">Creative Director</p>
-        </div>
-      </div>
-
+    <div class="mt-10 text-center">
+      <p class="text-on-surface-variant font-light text-sm mb-4">Still have questions? Mini is just a message away.</p>
+      <a href="https://wa.me/917411307621?text=Hello%20Mini%20Govil%2C%20I%20have%20a%20question%20before%20booking"
+         class="inline-flex items-center gap-3 text-primary font-label tracking-widest uppercase text-xs group/lnk border-b border-primary/30 hover:border-primary pb-0.5 transition-colors">
+        Ask Mini on WhatsApp
+        <span class="h-px w-6 bg-primary transition-all duration-500 group-hover/lnk:w-14"></span>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════ INSTAGRAM CTA ═══════════════════ -->
-<section class="py-24 bg-surface reveal" style="background:radial-gradient(circle at 50% 40%,rgba(242,202,80,0.07),#131313 70%)">
+<section class="py-24 bg-surface-container-low reveal" style="background:radial-gradient(circle at 50% 40%,rgba(242,202,80,0.07),#131313 70%)">
   <div class="max-w-3xl mx-auto px-6 text-center space-y-7">
     <div class="inline-flex items-center gap-3 justify-center px-5 py-2.5 border border-primary/30 rounded-full">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="1.5" y="1.5" width="21" height="21" rx="5" stroke="#f2ca50" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="#f2ca50" stroke-width="1.8"/><circle cx="16.2" cy="7.8" r="1.2" fill="#f2ca50"/></svg>
       <span class="font-headline text-primary tracking-wider">@minigovilastro</span>
     </div>
     <h2 class="font-headline text-4xl md:text-5xl text-primary leading-snug">Join the Cosmic Community</h2>
-    <p class="text-on-surface-variant text-lg font-light">Daily horoscopes, tarot insights, and celestial wisdom — follow for your cosmic update.</p>
+    <p class="text-on-surface-variant text-lg font-light">Daily horoscopes, tarot insights, and celestial wisdom — follow for your daily cosmic update.</p>
     <a href="https://www.instagram.com/minigovilastro/" target="_blank" rel="noopener"
        class="inline-block px-10 py-4 rounded-full border border-primary text-primary font-label tracking-widest uppercase text-xs hover:bg-primary hover:text-on-primary transition-all duration-300">
       Follow on Instagram
@@ -726,7 +805,7 @@
   <div class="max-w-7xl mx-auto px-6 md:px-12">
     <div class="text-center mb-12 space-y-3">
       <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Book a Consultation</h2>
-      <p class="text-on-surface-variant text-lg font-light">Message with your intent and begin your journey.</p>
+      <p class="text-on-surface-variant text-lg font-light">Message with your intent and begin your journey toward clarity.</p>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -816,11 +895,11 @@
 <!-- ═══════════════════ CTA BAND ═══════════════════ -->
 <section class="py-24 bg-surface text-center reveal">
   <div class="max-w-4xl mx-auto px-6 space-y-7">
-    <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Your Stars are Waiting</h2>
-    <p class="text-on-surface-variant text-lg max-w-2xl mx-auto font-light">Step into the light of clarity. Book your private session today.</p>
+    <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Your Stars Are Waiting</h2>
+    <p class="text-on-surface-variant text-lg max-w-2xl mx-auto font-light">The clarity you've been searching for is one conversation away. Book your private session today — in Hindi or English, from anywhere in India or abroad.</p>
     <a href="https://wa.me/917411307621?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20book%20a%20session"
        class="inline-block bg-primary text-on-primary px-14 py-5 rounded-full font-label tracking-widest uppercase text-xs hover:bg-primary-container transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-primary/20 font-bold">
-      Schedule Your Session
+      Yes, I Want Clarity →
     </a>
   </div>
 </section>
@@ -835,6 +914,7 @@
       <a href="#consultations" class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Consultations</a>
       <a href="#courses"       class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Courses</a>
       <a href="#reels"         class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Reels</a>
+      <a href="#faq"           class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">FAQ</a>
       <a href="#contact"       class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Contact</a>
     </div>
     <div class="flex gap-3 flex-wrap justify-center">
@@ -883,7 +963,7 @@
       </span>
     </div>
     <div class="flex flex-col md:flex-row items-center gap-5 pt-8 border-t border-outline-variant/10 w-full justify-between">
-      <p class="font-label text-xs text-stone-500">&copy; 2026 Mini Govil Astro Tarot House House. All Rights Reserved.</p>
+      <p class="font-label text-xs text-stone-500">&copy; 2026 Mini Govil Astro Tarot House. All Rights Reserved.</p>
       <div class="flex gap-5">
         <a href="#" class="font-label text-xs text-stone-500 hover:text-primary transition-colors">Privacy Policy</a>
         <a href="#" class="font-label text-xs text-stone-500 hover:text-primary transition-colors">Terms of Service</a>
@@ -895,9 +975,13 @@
 <!-- WhatsApp FAB -->
 <a href="https://wa.me/917411307621?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20book%20a%20session"
    target="_blank" rel="noopener"
-   class="fixed right-5 bottom-6 z-50 flex items-center gap-2 bg-primary text-on-primary px-4 py-3 rounded-full shadow-xl shadow-primary/30 font-label text-xs tracking-widest uppercase hover:bg-primary-container transition-all duration-300 hover:-translate-y-0.5">
-  <span class="material-symbols-outlined text-lg">chat</span>
-  Book Now
+   title="Book a session on WhatsApp"
+   class="fixed right-5 bottom-6 z-50 flex items-center gap-2.5 bg-primary text-on-primary px-5 py-3.5 rounded-full shadow-xl shadow-primary/30 font-label text-xs tracking-widest uppercase hover:bg-primary-container transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/40">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.417A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M8.5 9.5c.167.667.9 2.3 2.5 3.5s2.833 1.667 3.5 1.833c.167-.333.5-1.1.5-1.5s-.667-.733-1-1c-.267-.267-.9-.1-1.5.5-.6-.2-1.8-1-2.5-2.5.6-.6.767-1.233.5-1.5-.267-.2-.933-.733-1-.5S8.333 8.833 8.5 9.5z" fill="currentColor"/>
+  </svg>
+  Book on WhatsApp
 </a>
 
 <!-- ═══════════════════ SCRIPTS ═══════════════════ -->
