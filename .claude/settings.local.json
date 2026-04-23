@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.asknebula.com)",
+      "WebFetch(domain:share.google)",
+      "WebFetch(domain:www.google.com)"
+    ]
+  }
+}

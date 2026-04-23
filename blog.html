@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Mini Govil Astro Tarot House</title>
+  <meta name="description" content="Astrology, tarot, and Vedic wisdom — decoded for everyday life. Read the latest articles by Mini Govil." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline-variant": "#5a5140",
+            "surface-container": "#272523",
+            "on-background": "#f0ece4",
+            "background": "#0f0f0f",
+            "surface-container-highest": "#3c3a38",
+            "outline": "#99907c",
+            "primary-container": "#d4af37",
+            "on-surface": "#f0ece4",
+            "primary": "#f2ca50",
+            "surface": "#181716",
+            "surface-container-high": "#302e2c",
+            "on-primary": "#3c2f00",
+            "primary-fixed-dim": "#e9c349",
+            "surface-container-low": "#1f1e1c",
+            "surface-bright": "#3e3c3a",
+            "secondary": "#ffe2ab",
+            "on-surface-variant": "#c8bfaa",
+          },
+          fontFamily: {
+            headline: ["Noto Serif", "serif"],
+            body: ["Manrope", "sans-serif"],
+            label: ["Manrope", "sans-serif"],
+          },
+          borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+    .text-glow { text-shadow: 0 0 28px rgba(242,202,80,0.4); }
+    #mobileMenu { display: none; }
+    #mobileMenu.open { display: flex; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #0f0f0f; }
+    ::-webkit-scrollbar-thumb { background: #4d4635; border-radius: 3px; }
+    .category-btn.active { background: rgba(242,202,80,0.15); border-color: rgba(242,202,80,0.6); color: #f2ca50; }
+    .post-card { display: flex; }
+    .post-card.hidden-card { display: none; }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden selection:bg-primary/30">
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav id="navbar" class="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-outline-variant/20">
+  <div class="flex items-center justify-between px-6 md:px-12 py-5 max-w-7xl mx-auto">
+    <a href="index.html" class="font-headline text-xl tracking-tight text-primary">Mini Govil Astro Tarot House</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html"            class="font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors">Home</a>
+      <a href="index.html#about"      class="font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors">About</a>
+      <a href="index.html#consultations" class="font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors">Consultations</a>
+      <a href="index.html#courses"    class="font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors">Courses</a>
+      <a href="index.html#reels"      class="font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors">Reels</a>
+      <a href="blog.html"             class="font-headline tracking-widest uppercase text-xs text-primary transition-colors">Blog</a>
+      <a href="index.html#contact"    class="font-label tracking-widest uppercase text-xs px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary transition-all duration-300">Contact</a>
+    </div>
+    <button id="menuToggle" class="md:hidden text-on-surface" aria-label="Toggle menu">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="flex-col gap-0 px-6 pb-4 bg-background/96 backdrop-blur-xl border-t border-outline-variant/20">
+    <a href="index.html"            class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors border-b border-outline-variant/10">Home</a>
+    <a href="index.html#about"      class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors border-b border-outline-variant/10">About</a>
+    <a href="index.html#consultations" class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors border-b border-outline-variant/10">Consultations</a>
+    <a href="index.html#courses"    class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors border-b border-outline-variant/10">Courses</a>
+    <a href="index.html#reels"      class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors border-b border-outline-variant/10">Reels</a>
+    <a href="blog.html"             class="block py-3 font-headline tracking-widest uppercase text-xs text-primary border-b border-outline-variant/10">Blog</a>
+    <a href="index.html#contact"    class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 hover:text-primary transition-colors">Contact</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="pt-40 pb-20 bg-surface-container-low relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5">
+    <img src="images/banner.jpg" alt="" class="w-full h-full object-cover" />
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-surface-container-low/60 to-surface-container-low"></div>
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12 text-center">
+    <p class="font-label text-primary tracking-[0.3em] uppercase text-xs mb-4">Cosmic Wisdom</p>
+    <h1 class="font-headline text-5xl md:text-7xl text-on-surface tracking-tight mb-6 text-glow">The Blog</h1>
+    <p class="text-on-surface-variant text-lg font-light max-w-xl mx-auto">Astrology, tarot, and Vedic wisdom — decoded for everyday life by Mini Govil.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════ CATEGORY FILTER ═══════════════════ -->
+<div class="bg-surface border-b border-outline-variant/15 sticky top-[73px] z-40">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex gap-3 overflow-x-auto">
+    <button data-cat="all"             class="category-btn active flex-shrink-0 text-xs font-label uppercase tracking-widest px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all duration-200">All</button>
+    <button data-cat="astrology"       class="category-btn flex-shrink-0 text-xs font-label uppercase tracking-widest px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all duration-200">Astrology</button>
+    <button data-cat="tarot"           class="category-btn flex-shrink-0 text-xs font-label uppercase tracking-widest px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all duration-200">Tarot</button>
+    <button data-cat="vedic"           class="category-btn flex-shrink-0 text-xs font-label uppercase tracking-widest px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all duration-200">Vedic Astrology</button>
+    <button data-cat="spiritual"       class="category-btn flex-shrink-0 text-xs font-label uppercase tracking-widest px-4 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all duration-200">Spiritual</button>
+  </div>
+</div>
+
+<!-- ═══════════════════ FEATURED POST ═══════════════════ -->
+<section class="py-16 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <a href="#" class="group grid grid-cols-1 md:grid-cols-2 gap-8 bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/15 hover:border-primary/30 transition-all duration-500" data-category="astrology">
+      <div class="h-64 md:h-auto overflow-hidden">
+        <img src="images/feature-natal.jpg" alt="Moon Sign Astrology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-85" />
+      </div>
+      <div class="p-8 md:p-12 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Astrology</span>
+          <span class="text-stone-600 text-xs font-label uppercase tracking-widest">Featured</span>
+        </div>
+        <h2 class="font-headline text-2xl md:text-3xl text-on-surface mb-4 group-hover:text-primary transition-colors leading-snug">What Your Moon Sign Says About Your Emotional World</h2>
+        <p class="text-on-surface-variant font-light text-sm leading-relaxed mb-6">Your Sun sign only tells half the story. Discover why your Moon sign holds the key to your emotional patterns, deep reactions, and inner world — and how to use this knowledge to live with more ease.</p>
+        <div class="flex items-center justify-between">
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest">April 8, 2026 · Mini Govil</p>
+          <span class="text-primary text-xs font-label uppercase tracking-widest group-hover:translate-x-1 transition-transform duration-300">Read →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════ ARTICLES GRID ═══════════════════ -->
+<section class="pb-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div id="postsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Post 1 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="tarot">
+        <div class="h-48 overflow-hidden">
+          <img src="images/feature-tarot.jpg" alt="Major Arcana Tarot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Tarot</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">The Major Arcana: A Beginner's Guide to the 22 Cards</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">From The Fool to The World — understanding the Major Arcana is your first step to confident, intuitive tarot reading.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">April 5, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 2 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="spiritual">
+        <div class="h-48 overflow-hidden">
+          <img src="images/stock_1.jpg" alt="Life Path and Destiny" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Spiritual</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Life Path Numbers: What Your Birthday Reveals About Your Destiny</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Your birth date holds a secret number that maps your soul's journey. Here's how to calculate yours and what it means.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">April 2, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 3 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="vedic">
+        <div class="h-48 overflow-hidden">
+          <img src="images/vedic-1.jpg" alt="Saturn Return Vedic Astrology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Vedic Astrology</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Saturn Return: Why Your Late 20s Feel Like Everything is Changing</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Saturn's return every 29.5 years is a powerful cosmic reset. Here's what to expect and how to work with it.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 28, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 4 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="tarot">
+        <div class="h-48 overflow-hidden">
+          <img src="images/tarot-2.jpg" alt="Daily Tarot Pull" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Tarot</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">How to Do a Daily One-Card Tarot Pull — and Actually Benefit From It</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">A simple 2-minute morning ritual that brings surprising clarity. Here's how to start and what to look for.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 24, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 5 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="vedic">
+        <div class="h-48 overflow-hidden">
+          <img src="images/stock_2.jpg" alt="12 Houses Kundali" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Vedic Astrology</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">The 12 Houses of the Kundali — What Each One Governs</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Think of your Kundali as a cosmic blueprint. Each of the 12 houses governs a different area of life — here's the map.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 20, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 6 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="spiritual">
+        <div class="h-48 overflow-hidden">
+          <img src="images/stock_4.png" alt="Spiritual Practices" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Spiritual</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">5 Daily Rituals That Align You With the Cosmic Flow</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Simple, grounding practices — inspired by Vedic wisdom — to start each day with intention and cosmic awareness.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 15, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 7 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="astrology">
+        <div class="h-48 overflow-hidden">
+          <img src="images/stock_3.png" alt="Rising Sign Astrology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Astrology</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Your Rising Sign: The Mask You Wear and the Soul Beneath</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Your Lagna or Ascendant shapes how the world sees you — and how you see the world. Here's what it reveals.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 10, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 8 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="spiritual">
+        <div class="h-48 overflow-hidden">
+          <img src="images/feature-live.jpg" alt="Angel Numbers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Spiritual</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Angel Numbers 111, 222, 333 — What They're Trying to Tell You</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Seeing repeating numbers everywhere? The universe is sending you a message. Here's how to decode it.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 5, 2026</p>
+        </div>
+      </a>
+
+      <!-- Post 9 -->
+      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="spiritual">
+        <div class="h-48 overflow-hidden">
+          <img src="images/feature-daily.jpg" alt="Full Moon Rituals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Spiritual</span>
+          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Full Moon Rituals: How to Release, Reflect and Reset Each Month</h3>
+          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">The full moon is the most powerful time for releasing what no longer serves you. Here's a simple ritual to try tonight.</p>
+          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">February 28, 2026</p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- No results message -->
+    <div id="noResults" class="hidden text-center py-20">
+      <span class="material-symbols-outlined text-primary/30 text-6xl mb-4 block">search_off</span>
+      <p class="font-headline text-xl text-on-surface-variant">No articles in this category yet.</p>
+      <p class="text-on-surface-variant text-sm font-light mt-2">Check back soon — new posts every week.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CTA BAND ═══════════════════ -->
+<section class="py-20 bg-surface-container-low text-center">
+  <div class="max-w-3xl mx-auto px-6 space-y-6">
+    <p class="font-label text-primary tracking-[0.3em] uppercase text-xs">Ready for Personalised Guidance?</p>
+    <h2 class="font-headline text-3xl md:text-5xl text-on-surface tracking-tight">Reading About the Stars is Just the Beginning</h2>
+    <p class="text-on-surface-variant font-light">Book a private session with Mini and get answers tailored to your unique birth chart and life situation.</p>
+    <a href="https://wa.me/919650078833?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20book%20a%20reading"
+       class="inline-block bg-primary text-on-primary px-12 py-4 rounded-full font-label tracking-widest uppercase text-xs hover:bg-primary-container transition-all duration-300 font-bold">
+      Book a Session →
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="bg-surface-container-low border-t border-outline-variant/15 pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center gap-8">
+    <div class="font-headline text-xl text-primary">Mini Govil Astro Tarot House</div>
+    <div class="flex flex-wrap justify-center gap-8">
+      <a href="index.html"               class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Home</a>
+      <a href="index.html#about"         class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">About</a>
+      <a href="index.html#consultations" class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Consultations</a>
+      <a href="index.html#courses"       class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Courses</a>
+      <a href="index.html#reels"         class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Reels</a>
+      <a href="blog.html"                class="font-label text-xs tracking-widest uppercase text-primary transition-colors">Blog</a>
+      <a href="index.html#contact"       class="font-label text-xs tracking-widest uppercase text-stone-400 hover:text-primary transition-colors">Contact</a>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-5 pt-8 border-t border-outline-variant/10 w-full justify-between">
+      <p class="font-label text-xs text-stone-500">&copy; 2026 Mini Govil Astro Tarot House. All Rights Reserved.</p>
+      <div class="flex gap-5">
+        <a href="#" class="font-label text-xs text-stone-500 hover:text-primary transition-colors">Privacy Policy</a>
+        <a href="#" class="font-label text-xs text-stone-500 hover:text-primary transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════ SCRIPTS ═══════════════════ -->
+<script>
+  // Mobile menu toggle
+  document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+
+  // Category filter
+  const btns = document.querySelectorAll('.category-btn');
+  const cards = document.querySelectorAll('.post-card');
+  const noResults = document.getElementById('noResults');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cat = btn.dataset.cat;
+      let visible = 0;
+
+      cards.forEach(card => {
+        const match = cat === 'all' || card.dataset.category === cat;
+        card.style.display = match ? 'flex' : 'none';
+        if (match) visible++;
+      });
+
+      noResults.classList.toggle('hidden', visible > 0);
+    });
+  });
+</script>
+
+</body>
+</html>
