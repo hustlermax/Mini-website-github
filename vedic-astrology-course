@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LM44VW93L9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LM44VW93L9');
+  </script>
+
+  <!-- Primary SEO -->
+  <title>Vedic Astrology Course Online | Learn Jyotish & Get Certified</title>
+  <meta name="description" content="Enrol in India's most comprehensive Vedic astrology course. Learn Jyotish from expert teachers, earn a recognised certificate, and launch your astrology career." />
+  <meta name="keywords" content="vedic astrology course, Jyotish course, learn Vedic astrology, online astrology course, astrology certification, Kundali reading course, Nakshatras course, Dasha system course, birth chart analysis, planetary transits, divisional charts, Yogas in astrology, astrology for beginners, professional astrologer course, Vedic Jyotish online" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="author" content="Mini Govil" />
+  <link rel="canonical" href="https://www.miniastrotarot.com/vedic-astrology-course" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="Mini Govil Astro Tarot House" />
+  <meta property="og:title" content="Vedic Astrology Course Online – Learn Jyotish & Get Certified" />
+  <meta property="og:description" content="Master Kundali reading, Nakshatras, Dasha systems, transits and professional astrology consultation skills through Mini Govil's online Vedic Astrology course." />
+  <meta property="og:image" content="https://www.miniastrotarot.com/images/banner.jpg" />
+  <meta property="og:url" content="https://www.miniastrotarot.com/vedic-astrology-course" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vedic Astrology Course Online | Mini Govil" />
+  <meta name="twitter:description" content="Learn Vedic astrology online from beginner to professional level. Live classes, recorded sessions, practice charts and certification." />
+  <meta name="twitter:image" content="https://www.miniastrotarot.com/images/banner.jpg" />
+
+  <!-- Schema: Course + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Course",
+        "@id": "https://www.miniastrotarot.com/vedic-astrology-course#course",
+        "name": "Vedic Astrology Course Online – Learn Jyotish & Get Certified",
+        "description": "A comprehensive online Vedic astrology course covering Kundali reading, Navagraha, Bhavas, Nakshatras, Dasha systems, divisional charts, yogas, transits, remedies and professional consultation practice.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Mini Govil Astro Tarot House",
+          "url": "https://www.miniastrotarot.com"
+        },
+        "educationalCredentialAwarded": "Certificate / Diploma / Master Certificate",
+        "courseMode": "Online",
+        "inLanguage": ["English", "Hindi"],
+        "hasCourseInstance": [
+          {
+            "@type": "CourseInstance",
+            "courseMode": "Online",
+            "courseWorkload": "P3M",
+            "name": "Foundation in Vedic Astrology"
+          },
+          {
+            "@type": "CourseInstance",
+            "courseMode": "Online",
+            "courseWorkload": "P6M",
+            "name": "Diploma in Vedic Astrology"
+          },
+          {
+            "@type": "CourseInstance",
+            "courseMode": "Online",
+            "courseWorkload": "P12M",
+            "name": "Advanced Jyotish Mastery"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "ratingCount": "10000"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.miniastrotarot.com/vedic-astrology-course#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need any prior knowledge to enrol in the Vedic astrology course?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No prior knowledge is required. The Foundation course is designed for absolute beginners who want to learn Jyotish step by step."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Vedic astrology course available online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The course is delivered online through live interactive classes, recorded lectures and downloadable study materials."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to complete a Vedic astrology course?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Course durations range from 3 months for Foundation to 18 months for the Professional Astrologer Program."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I make a career as a professional astrologer after this course?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Advanced and professional programs include chart reading practice, consultation skills and business mentorship for aspiring astrologers."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#f2ca50" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline-variant": "#5a5140",
+            "surface-container": "#272523",
+            "on-background": "#f0ece4",
+            "background": "#0f0f0f",
+            "surface-container-highest": "#3c3a38",
+            "outline": "#99907c",
+            "primary-container": "#d4af37",
+            "on-surface": "#f0ece4",
+            "primary": "#f2ca50",
+            "surface": "#181716",
+            "surface-container-high": "#302e2c",
+            "on-primary": "#3c2f00",
+            "surface-container-low": "#1f1e1c",
+            "secondary": "#ffe2ab",
+            "on-surface-variant": "#c8bfaa"
+          },
+          fontFamily: {
+            headline: ["Noto Serif", "serif"],
+            body: ["Manrope", "sans-serif"],
+            label: ["Manrope", "sans-serif"]
+          },
+          borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "9999px" }
+        }
+      }
+    };
+  </script>
+  <style>
+    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 24}
+    .text-glow{text-shadow:0 0 32px rgba(242,202,80,.45)}
+    .gold-glow{box-shadow:0 0 40px rgba(242,202,80,.08)}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+    .reveal.active{opacity:1;transform:translateY(0)}
+    ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#0f0f0f}::-webkit-scrollbar-thumb{background:#4d4635;border-radius:4px}
+    #navbar{transition:background .4s ease,border-color .4s ease,padding .3s ease}
+    #navbar.scrolled{background:rgba(19,19,19,.88)!important;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-color:rgba(77,70,53,.25)!important}
+    #mobileMenu{display:none;transform:translateY(-8px);opacity:0;transition:transform .25s ease,opacity .25s ease}
+    #mobileMenu.open{display:flex;transform:translateY(0);opacity:1}
+    .btn-primary{display:inline-block;background:#f2ca50;color:#3c2f00;padding:.875rem 2rem;border-radius:9999px;font-family:Manrope,sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;transition:background .2s ease,transform .2s ease,box-shadow .2s ease}
+    .btn-primary:hover{background:#d4af37;transform:translateY(-2px);box-shadow:0 8px 24px rgba(242,202,80,.25)}
+    .btn-outline{display:inline-block;border:1px solid #f2ca50;color:#f2ca50;padding:.875rem 2rem;border-radius:9999px;font-family:Manrope,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;transition:background .2s ease,color .2s ease,transform .2s ease}
+    .btn-outline:hover{background:#f2ca50;color:#3c2f00;transform:translateY(-2px)}
+    .section-label{display:block;font-family:Manrope,sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#f2ca50;margin-bottom:.75rem}
+    @keyframes pulse-gold{0%,100%{box-shadow:0 0 0 0 rgba(242,202,80,0)}50%{box-shadow:0 0 0 10px rgba(242,202,80,.12)}}
+    .hero-cta{animation:pulse-gold 3s ease infinite}
+    .card-lift{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+    .card-lift:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.35);border-color:rgba(242,202,80,.35)}
+    @keyframes mRot{to{transform:rotate(360deg)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    .float-card{animation:float 5s ease-in-out infinite}
+    details.faq-item{border-bottom:1px solid rgba(77,70,53,.2)}
+    details.faq-item summary{list-style:none;cursor:pointer}
+    details.faq-item summary::-webkit-details-marker{display:none}
+    details.faq-item[open] summary .faq-icon{transform:rotate(45deg)}
+    .faq-icon{transition:transform .3s ease;display:inline-block}
+    .text-gradient{background:linear-gradient(135deg,#f2ca50,#ffe2ab);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .table-card{overflow:hidden;border:1px solid rgba(90,81,64,.2);border-radius:1rem}
+    @media(max-width:768px){.hide-mobile-table thead{display:none}.hide-mobile-table,.hide-mobile-table tbody,.hide-mobile-table tr,.hide-mobile-table td{display:block;width:100%}.hide-mobile-table tr{border-bottom:1px solid rgba(90,81,64,.25);padding:1rem}.hide-mobile-table td{padding:.35rem 0}.hide-mobile-table td:before{content:attr(data-label);display:block;color:#f2ca50;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.2rem}}
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body overflow-x-hidden selection:bg-primary/30">
+
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent" style="background:transparent">
+  <div class="flex items-center justify-between px-6 md:px-12 py-5 max-w-7xl mx-auto">
+    <a href="index.html" class="font-headline text-xl tracking-tight text-primary">Mini Govil Astro Tarot House</a>
+    <div class="hidden md:flex items-center gap-7">
+      <a href="#overview" class="font-label tracking-wider uppercase text-[11px] font-medium text-stone-400 hover:text-primary transition-colors">Overview</a>
+      <a href="#levels" class="font-label tracking-wider uppercase text-[11px] font-medium text-stone-400 hover:text-primary transition-colors">Levels</a>
+      <a href="#syllabus" class="font-label tracking-wider uppercase text-[11px] font-medium text-stone-400 hover:text-primary transition-colors">Syllabus</a>
+      <a href="#testimonials" class="font-label tracking-wider uppercase text-[11px] font-medium text-stone-400 hover:text-primary transition-colors">Reviews</a>
+      <a href="#faq" class="font-label tracking-wider uppercase text-[11px] font-medium text-stone-400 hover:text-primary transition-colors">FAQ</a>
+      <a href="#enrol" class="font-label tracking-wider uppercase text-[11px] font-semibold px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-on-primary transition-all duration-300">Enrol Now</a>
+    </div>
+    <button id="menuToggle" class="md:hidden text-on-surface" aria-label="Toggle menu">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="flex-col gap-0 px-6 pb-4 bg-background/96 backdrop-blur-xl border-t border-outline-variant/20">
+    <a href="#overview" class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 border-b border-outline-variant/10">Overview</a>
+    <a href="#levels" class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 border-b border-outline-variant/10">Levels</a>
+    <a href="#syllabus" class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 border-b border-outline-variant/10">Syllabus</a>
+    <a href="#testimonials" class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 border-b border-outline-variant/10">Reviews</a>
+    <a href="#faq" class="block py-3 font-headline tracking-widest uppercase text-xs text-stone-300 border-b border-outline-variant/10">FAQ</a>
+    <a href="#enrol" class="block py-3 font-headline tracking-widest uppercase text-xs text-primary">Enrol Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+  <canvas id="starfieldCanvas" class="absolute inset-0 w-full h-full z-0"></canvas>
+  <div class="absolute inset-0 z-[1] opacity-10">
+    <img src="images/stock_4.png" alt="vedic astrology course celestial background" class="w-full h-full object-cover object-top" />
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/25 z-[2]"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background z-[2]"></div>
+
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pt-28 pb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <div class="inline-flex items-center gap-2 mb-7 px-4 py-2 rounded-full border border-primary/25 bg-primary/5">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">school</span>
+          <span class="font-label text-xs text-primary font-semibold">Online · Certified · Beginner to Professional</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl text-on-surface leading-[1.05] tracking-tight mb-5">
+          Vedic Astrology Course Online –<br />
+          <span class="text-gradient">Learn Jyotish &amp; Get Certified</span>
+        </h1>
+        <h2 class="text-secondary text-xl md:text-2xl font-headline italic mb-5">
+          India's Most Comprehensive Online Vedic Astrology Course — Beginner to Professional
+        </h2>
+        <p class="text-on-surface-variant text-lg font-light leading-relaxed max-w-xl mb-10">
+          Master Vedic Astrology — the sacred science of Jyotish. Learn to decode the language of the stars, read a Kundali, understand Nakshatras, and predict life events through Dasha systems with a career-ready curriculum.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-12">
+          <a href="https://wa.me/919650078833?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20enrol%20in%20the%20Vedic%20Astrology%20Course" class="btn-primary hero-cta">Enrol in the Course →</a>
+          <a href="https://wa.me/919650078833?text=Please%20send%20me%20the%20Vedic%20Astrology%20Course%20syllabus%20PDF" class="btn-outline">Download Syllabus PDF</a>
+          <a href="https://wa.me/919650078833?text=I%20want%20to%20book%20a%20free%20demo%20class%20for%20Vedic%20Astrology%20Course" class="btn-outline">Book Free Demo</a>
+        </div>
+        <div class="flex flex-wrap gap-6">
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings:'FILL' 1">groups</span><span class="font-label text-xs text-on-surface-variant uppercase tracking-widest">10,000+ Students</span></div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings:'FILL' 1">workspace_premium</span><span class="font-label text-xs text-on-surface-variant uppercase tracking-widest">Certification</span></div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings:'FILL' 1">video_camera_front</span><span class="font-label text-xs text-on-surface-variant uppercase tracking-widest">Live + Recorded</span></div>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex justify-center items-center reveal">
+        <div class="relative w-full max-w-md">
+          <div class="absolute inset-0 flex items-center justify-center opacity-20" aria-hidden="true">
+            <svg width="430" height="430" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+              <g style="transform-origin:160px 160px;animation:mRot 120s linear infinite">
+                <circle cx="160" cy="160" r="140" fill="none" stroke="#f2ca50" stroke-width="1.5"/>
+                <circle cx="160" cy="160" r="110" fill="none" stroke="#f2ca50" stroke-width="1" opacity="0.6"/>
+                <g stroke="#f2ca50" stroke-width="0.8" opacity="0.4">
+                  <line x1="160" y1="20" x2="160" y2="300"/>
+                  <line x1="20" y1="160" x2="300" y2="160"/>
+                  <line x1="57" y1="57" x2="263" y2="263"/>
+                  <line x1="263" y1="57" x2="57" y2="263"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden border border-primary/20 gold-glow">
+            <img src="images/conversational.JPG" alt="Mini Govil teaching Vedic astrology course online" class="w-full h-[580px] object-cover object-top" />
+            <div class="absolute inset-0 bg-gradient-to-t from-background/75 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <p class="font-headline text-2xl text-white">Learn with Mini Govil</p>
+              <p class="font-label text-xs text-primary uppercase tracking-widest mt-1">Vedic Astrology · Kundali · Dasha · Nakshatra</p>
+            </div>
+          </div>
+          <div class="float-card absolute -right-8 top-16 bg-surface-container border border-primary/20 rounded-xl p-5 w-44">
+            <p class="font-headline text-3xl text-primary">4.9/5</p>
+            <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Average Rating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface-container border-y border-outline-variant/20 py-7">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+    <div><p class="font-headline text-4xl text-primary">10,000+</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-1">Students Trained</p></div>
+    <div><p class="font-headline text-4xl text-primary">15+</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-1">Years Excellence</p></div>
+    <div><p class="font-headline text-4xl text-primary">4.9/5</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-1">Average Rating</p></div>
+    <div><p class="font-headline text-4xl text-primary">100%</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-1">Online Learning</p></div>
+  </div>
+</section>
+
+<!-- WHAT IS VEDIC ASTROLOGY -->
+<section id="overview" class="py-24 bg-surface reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <span class="section-label">Course Overview</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight mb-6">What Is Vedic Astrology <span class="text-primary italic">(Jyotish)?</span></h2>
+      <div class="space-y-5 text-on-surface-variant text-lg font-light leading-relaxed">
+        <p>Vedic astrology, known in Sanskrit as Jyotish or the “science of light,” is one of the world's oldest astrological traditions. It uses the sidereal zodiac, Navagraha, twelve Bhavas and twenty-seven Nakshatras to map the blueprint of a person's life.</p>
+        <p>Unlike Western astrology, Vedic astrology places deep emphasis on the Moon sign, Lagna and predictive tools such as the Vimshottari Dasha system. Its connection with karma, dharma and cosmic timing makes it both spiritual and practical.</p>
+        <p>This professional Vedic astrology course teaches birth chart analysis, divisional charts, planetary periods and Vedic remedies — skills used by practising astrologers across India and worldwide.</p>
+      </div>
+    </div>
+    <div class="rounded-2xl overflow-hidden border border-primary/15 gold-glow">
+      <img src="images/banner.jpg" alt="vedic astrology course kundali and jyotish learning" class="w-full h-[520px] object-cover" />
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="py-24 bg-surface-container-low reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-14">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">A Practical, Career-Ready Jyotish Course</h2>
+      <p class="text-on-surface-variant text-lg font-light max-w-2xl mx-auto mt-4">Designed for students who want structured learning, guided practice and confidence to interpret real Kundalis.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div class="p-7 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><span class="material-symbols-outlined text-primary text-3xl">psychology</span><h3 class="font-headline text-xl mt-5 mb-3">Expert Faculty</h3><p class="text-on-surface-variant text-sm leading-relaxed">Learn from practising Jyotishis using real case studies, not theory alone.</p></div>
+      <div class="p-7 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><span class="material-symbols-outlined text-primary text-3xl">public</span><h3 class="font-headline text-xl mt-5 mb-3">100% Online</h3><p class="text-on-surface-variant text-sm leading-relaxed">Weekend live classes, recordings and PDFs accessible from anywhere.</p></div>
+      <div class="p-7 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><span class="material-symbols-outlined text-primary text-3xl">groups</span><h3 class="font-headline text-xl mt-5 mb-3">Community</h3><p class="text-on-surface-variant text-sm leading-relaxed">Join study groups, Q&A sessions and a private learning community.</p></div>
+      <div class="p-7 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><span class="material-symbols-outlined text-primary text-3xl">business_center</span><h3 class="font-headline text-xl mt-5 mb-3">Career Support</h3><p class="text-on-surface-variant text-sm leading-relaxed">Learn pricing, client management and consultation practice setup.</p></div>
+      <div class="p-7 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><span class="material-symbols-outlined text-primary text-3xl">smartphone</span><h3 class="font-headline text-xl mt-5 mb-3">Mobile Portal</h3><p class="text-on-surface-variant text-sm leading-relaxed">Access lessons, quizzes and assignments from any device.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LEVELS -->
+<section id="levels" class="py-24 bg-surface reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-14">
+      <span class="section-label">Choose Your Level</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Our Vedic Astrology Courses</h2>
+    </div>
+    <div class="table-card bg-surface-container">
+      <table class="hide-mobile-table w-full text-left">
+        <thead class="bg-surface-container-high">
+          <tr class="font-label text-xs uppercase tracking-widest text-primary">
+            <th class="p-5">Course Name</th><th class="p-5">Duration</th><th class="p-5">Eligibility</th><th class="p-5">Certification</th>
+          </tr>
+        </thead>
+        <tbody class="text-on-surface-variant">
+          <tr class="border-t border-outline-variant/15"><td data-label="Course" class="p-5 font-headline text-on-surface text-xl">Foundation in Vedic Astrology</td><td data-label="Duration" class="p-5">3 Months</td><td data-label="Eligibility" class="p-5">Beginners</td><td data-label="Certification" class="p-5">Certificate</td></tr>
+          <tr class="border-t border-outline-variant/15"><td data-label="Course" class="p-5 font-headline text-on-surface text-xl">Diploma in Vedic Astrology</td><td data-label="Duration" class="p-5">6 Months</td><td data-label="Eligibility" class="p-5">Foundation Graduates</td><td data-label="Certification" class="p-5">Diploma</td></tr>
+          <tr class="border-t border-outline-variant/15"><td data-label="Course" class="p-5 font-headline text-on-surface text-xl">Advanced Jyotish Mastery</td><td data-label="Duration" class="p-5">12 Months</td><td data-label="Eligibility" class="p-5">Diploma Holders</td><td data-label="Certification" class="p-5">Post-Graduate Diploma</td></tr>
+          <tr class="border-t border-outline-variant/15"><td data-label="Course" class="p-5 font-headline text-primary text-xl">Professional Astrologer Program</td><td data-label="Duration" class="p-5">18 Months</td><td data-label="Eligibility" class="p-5">All Levels</td><td data-label="Certification" class="p-5">Master Certificate</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-center text-on-surface-variant mt-8">All programs include live classes, recorded sessions, study materials, doubt-clearing sessions, certification and placement guidance.</p>
+  </div>
+</section>
+
+<!-- SYLLABUS -->
+<section id="syllabus" class="py-24 bg-surface-container-low reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-14">
+      <span class="section-label">Detailed Curriculum</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Vedic Astrology Course Syllabus</h2>
+      <p class="text-on-surface-variant text-lg font-light max-w-2xl mx-auto mt-4">A structured curriculum covering foundational principles to advanced predictive techniques.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 1</p><h3 class="font-headline text-xl">Foundations of Jyotish</h3><p class="text-on-surface-variant text-sm mt-2">Vedic cosmology, Rashis, 27 Nakshatras and the role of Grahas.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 2</p><h3 class="font-headline text-xl">The Nine Planets</h3><p class="text-on-surface-variant text-sm mt-2">Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 3</p><h3 class="font-headline text-xl">Houses & Significations</h3><p class="text-on-surface-variant text-sm mt-2">12 Bhavas, Lagna calculation, house lords and results.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 4</p><h3 class="font-headline text-xl">Kundali Reading</h3><p class="text-on-surface-variant text-sm mt-2">Birth chart interpretation, placements, aspects and conjunctions.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 5</p><h3 class="font-headline text-xl">Dasha Systems</h3><p class="text-on-surface-variant text-sm mt-2">Vimshottari Dasha, Antardasha and event timing.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 6</p><h3 class="font-headline text-xl">Divisional Charts</h3><p class="text-on-surface-variant text-sm mt-2">Navamsha, Dashamsha, Saptamsha and deeper analysis.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 7</p><h3 class="font-headline text-xl">Yogas & Combinations</h3><p class="text-on-surface-variant text-sm mt-2">Raj Yogas, Dhana Yogas, Pancha Mahapurusha Yogas and more.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 8</p><h3 class="font-headline text-xl">Transits</h3><p class="text-on-surface-variant text-sm mt-2">Gochara, Saturn and Jupiter transits, Sade Sati and outcomes.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15 card-lift"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 9</p><h3 class="font-headline text-xl">Remedial Measures</h3><p class="text-on-surface-variant text-sm mt-2">Gemstones, mantras, yantras, donations and lifestyle corrections.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-primary/30 card-lift gold-glow"><p class="font-label text-xs text-primary uppercase tracking-widest mb-2">Module 10</p><h3 class="font-headline text-xl">Predictive Practice</h3><p class="text-on-surface-variant text-sm mt-2">Live chart reading, case studies, consultation skills and business basics.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS IT FOR -->
+<section class="py-24 bg-surface reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+    <div>
+      <span class="section-label">Who Should Enrol</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight mb-6">Built for Seekers, Students & Future Astrologers</h2>
+      <p class="text-on-surface-variant text-lg font-light leading-relaxed">No educational qualification is required. If you are 16 years or older and passionate about understanding the cosmic blueprint of life, this course is for you.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="p-5 rounded-xl bg-surface-container border border-outline-variant/15">Absolute beginners</div>
+      <div class="p-5 rounded-xl bg-surface-container border border-outline-variant/15">Yoga, Ayurveda & spirituality students</div>
+      <div class="p-5 rounded-xl bg-surface-container border border-outline-variant/15">Second-income seekers</div>
+      <div class="p-5 rounded-xl bg-surface-container border border-outline-variant/15">Aspiring professional astrologers</div>
+      <div class="p-5 rounded-xl bg-surface-container border border-outline-variant/15">Western astrology enthusiasts</div>
+      <div class="p-5 rounded-xl bg-surface-container border border-outline-variant/15">Parents & homemakers</div>
+      <div class="p-5 rounded-xl bg-surface-container border border-outline-variant/15 sm:col-span-2">Existing practitioners upgrading to Vedic methodology</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-24 bg-surface-container-low reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-14">
+      <span class="section-label">Simple Learning Flow</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">How Our Online Course Works</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-7 gap-4">
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15"><p class="font-headline text-primary text-3xl">1</p><h3 class="font-headline text-lg mt-3">Enrol Online</h3><p class="text-sm text-on-surface-variant mt-2">Register and access the portal.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15"><p class="font-headline text-primary text-3xl">2</p><h3 class="font-headline text-lg mt-3">Attend Classes</h3><p class="text-sm text-on-surface-variant mt-2">Live Zoom classes every weekend.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15"><p class="font-headline text-primary text-3xl">3</p><h3 class="font-headline text-lg mt-3">Practice Charts</h3><p class="text-sm text-on-surface-variant mt-2">200+ charts and assignments.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15"><p class="font-headline text-primary text-3xl">4</p><h3 class="font-headline text-lg mt-3">Clear Doubts</h3><p class="text-sm text-on-surface-variant mt-2">Monthly webinars and WhatsApp group.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15"><p class="font-headline text-primary text-3xl">5</p><h3 class="font-headline text-lg mt-3">Give Exam</h3><p class="text-sm text-on-surface-variant mt-2">Online proctored examination.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15"><p class="font-headline text-primary text-3xl">6</p><h3 class="font-headline text-lg mt-3">Get Certified</h3><p class="text-sm text-on-surface-variant mt-2">Receive certificate or diploma.</p></div>
+      <div class="p-6 rounded-xl bg-surface-container border border-primary/30 gold-glow"><p class="font-headline text-primary text-3xl">7</p><h3 class="font-headline text-lg mt-3">Launch Career</h3><p class="text-sm text-on-surface-variant mt-2">Use mentorship and alumni support.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-24 bg-surface border-t-2 border-primary/20 reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-14">
+      <span class="section-label">Student Stories</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">What Our Students Say</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-surface-container p-7 rounded-xl border border-outline-variant/10 card-lift"><p class="text-primary mb-4">★★★★★</p><p class="font-headline italic leading-relaxed">"Within three months I was reading charts for my family and friends. I am now running my own consultation practice."</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-6">Priya Sharma · Delhi</p></div>
+      <div class="bg-surface-container p-7 rounded-xl border border-outline-variant/10 card-lift"><p class="text-primary mb-4">★★★★★</p><p class="font-headline italic leading-relaxed">"Live classes, real chart practice, and a supportive community exceeded every expectation."</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-6">Rajesh Iyer · Chennai</p></div>
+      <div class="bg-surface-container p-7 rounded-xl border border-outline-variant/10 card-lift"><p class="text-primary mb-4">★★★★★</p><p class="font-headline italic leading-relaxed">"Nakshatras, Yogas and Dasha systems finally made sense. The doubt sessions are a game changer."</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-6">Ananya Mehta · Mumbai</p></div>
+      <div class="bg-surface-container p-7 rounded-xl border border-outline-variant/10 card-lift"><p class="text-primary mb-4">★★★★★</p><p class="font-headline italic leading-relaxed">"The professional certificate gave me the confidence to start charging for consultations."</p><p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-6">Sanjay Kumar · Bengaluru</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section class="py-24 bg-surface-container-low reveal">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-14">
+      <span class="section-label">Career Opportunities</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Build a Meaningful Astrology Career</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15">Independent Astrology Consultant</div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15">Online Astrology Content Creator</div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15">Astrology Teacher & Course Creator</div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15">Vedic Astrology Writer</div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15">Spiritual Counsellor</div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15">Corporate Astrologer</div>
+      <div class="p-6 rounded-xl bg-surface-container border border-outline-variant/15">Nadi Astrology Specialist</div>
+      <div class="p-6 rounded-xl bg-surface-container border border-primary/25 text-primary">Professional Jyotish Practice</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-24 bg-surface reveal">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <span class="section-label">FAQ</span>
+      <h2 class="font-headline text-4xl md:text-6xl text-on-surface tracking-tight">Frequently Asked Questions</h2>
+    </div>
+    <div class="bg-surface-container rounded-2xl border border-outline-variant/15 px-6 md:px-10">
+      <details class="faq-item py-6" open><summary class="flex justify-between gap-4"><span class="font-headline text-xl">Do I need prior knowledge?</span><span class="faq-icon text-primary text-2xl">+</span></summary><p class="text-on-surface-variant mt-4 leading-relaxed">No. The Foundation course is designed for absolute beginners.</p></details>
+      <details class="faq-item py-6"><summary class="flex justify-between gap-4"><span class="font-headline text-xl">Is the course available online?</span><span class="faq-icon text-primary text-2xl">+</span></summary><p class="text-on-surface-variant mt-4 leading-relaxed">Yes. All classes are delivered online through live interactive sessions, recorded lectures and downloadable materials.</p></details>
+      <details class="faq-item py-6"><summary class="flex justify-between gap-4"><span class="font-headline text-xl">What certification will I receive?</span><span class="faq-icon text-primary text-2xl">+</span></summary><p class="text-on-surface-variant mt-4 leading-relaxed">You receive a certificate, diploma or master certificate depending on the course level completed.</p></details>
+      <details class="faq-item py-6"><summary class="flex justify-between gap-4"><span class="font-headline text-xl">Are classes live or pre-recorded?</span><span class="faq-icon text-primary text-2xl">+</span></summary><p class="text-on-surface-variant mt-4 leading-relaxed">Both. Live Zoom classes include interaction and Q&A, while recorded sessions help you revise at your own pace.</p></details>
+      <details class="faq-item py-6"><summary class="flex justify-between gap-4"><span class="font-headline text-xl">Can I become a professional astrologer?</span><span class="faq-icon text-primary text-2xl">+</span></summary><p class="text-on-surface-variant mt-4 leading-relaxed">Yes. Advanced programs include consultation practice, career support and business mentorship.</p></details>
+      <details class="faq-item py-6"><summary class="flex justify-between gap-4"><span class="font-headline text-xl">What payment options are available?</span><span class="faq-icon text-primary text-2xl">+</span></summary><p class="text-on-surface-variant mt-4 leading-relaxed">One-time payment and EMI options can be shared by the admissions team on WhatsApp.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="enrol" class="py-24 bg-background relative overflow-hidden reveal">
+  <div class="absolute inset-0 opacity-10"><img src="images/tarot-2.jpg" alt="vedic astrology course enrolment background" class="w-full h-full object-cover"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background"></div>
+  <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center">
+    <span class="section-label">Limited Seats Available</span>
+    <h2 class="font-headline text-4xl md:text-7xl text-on-surface tracking-tight mb-6">Ready to Begin Your <span class="text-gradient">Vedic Astrology Journey?</span></h2>
+    <p class="text-on-surface-variant text-lg font-light leading-relaxed max-w-2xl mx-auto mb-10">Thousands of students have already transformed their lives through the ancient wisdom of Jyotish. Your journey begins with a single step.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/919650078833?text=Hello%20Mini%20Govil%2C%20I%20want%20to%20enrol%20in%20the%20Vedic%20Astrology%20Course" class="btn-primary hero-cta">Enrol Now</a>
+      <a href="https://wa.me/919650078833?text=Please%20send%20me%20the%20complete%20Vedic%20Astrology%20Course%20PDF" class="btn-outline">Download Syllabus</a>
+      <a href="https://wa.me/919650078833?text=I%20want%20to%20book%20a%20free%20demo%20class" class="btn-outline">Book Free Demo</a>
+    </div>
+  </div>
+</section>
+
+<footer class="py-10 bg-surface-container border-t border-outline-variant/20">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-6 items-center">
+    <p class="font-headline text-primary text-xl">Mini Govil Astro Tarot House</p>
+    <p class="font-label text-xs text-on-surface-variant uppercase tracking-widest text-center">Vedic Astrology Course · Online · Hindi & English</p>
+    <a href="https://wa.me/919650078833" class="font-label text-xs text-primary uppercase tracking-widest">WhatsApp: +91 96500 78833</a>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll state
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Mobile menu
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuToggle?.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // Reveal animation
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // Starfield canvas
+  const canvas = document.getElementById('starfieldCanvas');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+  function resizeCanvas(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    stars = Array.from({length: 120}, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.4 + 0.2,
+      a: Math.random() * 0.7 + 0.2,
+      s: Math.random() * 0.25 + 0.05
+    }));
+  }
+  function drawStars(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    stars.forEach(star => {
+      star.y += star.s;
+      if(star.y > canvas.height) star.y = 0;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(242,202,80,${star.a})`;
+      ctx.fill();
+    });
+    requestAnimationFrame(drawStars);
+  }
+  resizeCanvas();
+  drawStars();
+  window.addEventListener('resize', resizeCanvas);
+</script>
+
+</body>
+</html>
