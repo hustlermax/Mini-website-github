@@ -1,5 +1,6 @@
 backend:
-  name: rahulsharmacyber/Mini-website-github
+  name: github
+  repo: rahulsharmacyber/Mini-website-github
   branch: main
 
 media_folder: "images/uploads"
