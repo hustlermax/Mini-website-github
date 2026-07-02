@@ -1,6 +1,6 @@
 title: MiniAstroTarot
 description: Astrology, Tarot & Spiritual Guidance
-url: "https://miniastrotarot.com"
+url: "https://www.miniastrotarot.com"
 baseurl: ""
 
-permalink: /blog/:title/
+permalink: /blog/:slug/
