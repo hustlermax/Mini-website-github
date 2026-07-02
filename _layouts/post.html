@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/blog.html' | relative_url }}">Blog</a>
+    </nav>
+  </header>
+
+  <main class="blog-post-page">
+    <article class="blog-post">
+
+      <h1>{{ page.title }}</h1>
+
+      <p class="blog-date">
+        {{ page.date | date: "%B %d, %Y" }}
+      </p>
+
+      {% if page.image %}
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="blog-featured-image">
+      {% endif %}
+
+      <div class="blog-content">
+        {{ content }}
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+
+</body>
+</html>
