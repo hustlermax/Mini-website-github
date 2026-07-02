@@ -1,4 +1,4 @@
-  ---
+---
 title: Blog
 ---
 
@@ -71,7 +71,7 @@ title: Blog
     ::-webkit-scrollbar-thumb { background: #4d4635; border-radius: 3px; }
     .category-btn.active { background: rgba(242,202,80,0.15); border-color: rgba(242,202,80,0.6); color: #f2ca50; }
     .post-card { display: flex; }
-    .post-card.hidden-card { display: none; }
+    .hidden-card { display: none !important; }
   </style>
 </head>
 <body class="bg-background text-on-surface font-body overflow-x-hidden selection:bg-primary/30">
@@ -129,136 +129,102 @@ title: Blog
 </div>
 
 <!-- ═══════════════════ FEATURED POST ═══════════════════ -->
-<section class="py-16 bg-surface">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <a href="#" class="group grid grid-cols-1 md:grid-cols-2 gap-8 bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/15 hover:border-primary/30 transition-all duration-500" data-category="astrology">
-      <div class="h-64 md:h-auto overflow-hidden">
-        <img src="images/feature-natal.jpg" alt="Moon Sign Astrology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-85" />
-      </div>
-      <div class="p-8 md:p-12 flex flex-col justify-center">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Astrology</span>
-          <span class="text-stone-600 text-xs font-label uppercase tracking-widest">Featured</span>
+{% assign featured_post = site.posts | first %}
+
+{% if featured_post %}
+  {% assign featured_first_category = featured_post.categories | first %}
+  {% assign featured_raw_category = featured_post.category | default: featured_first_category | default: 'astrology' %}
+  {% assign featured_category_slug = featured_raw_category | downcase | replace: 'vedic astrology', 'vedic' | replace: ' ', '-' %}
+  {% assign featured_category_label = featured_post.category_label | default: featured_raw_category | replace: '-', ' ' %}
+  {% if featured_category_slug == 'vedic' %}
+    {% assign featured_category_label = 'Vedic Astrology' %}
+  {% endif %}
+  {% assign featured_image = featured_post.image | default: featured_post.thumbnail | default: 'images/banner.jpg' %}
+
+  <section class="py-16 bg-surface">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <a href="{{ featured_post.url | relative_url }}"
+         class="filter-card group grid grid-cols-1 md:grid-cols-2 gap-8 bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/15 hover:border-primary/30 transition-all duration-500"
+         data-category="{{ featured_category_slug }}">
+        <div class="h-64 md:h-auto overflow-hidden">
+          <img src="{{ featured_image | relative_url }}"
+               alt="{{ featured_post.title }}"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-85" />
         </div>
-        <h2 class="font-headline text-2xl md:text-3xl text-on-surface mb-4 group-hover:text-primary transition-colors leading-snug">What Your Moon Sign Says About Your Emotional World</h2>
-        <p class="text-on-surface-variant font-light text-sm leading-relaxed mb-6">Your Sun sign only tells half the story. Discover why your Moon sign holds the key to your emotional patterns, deep reactions, and inner world — and how to use this knowledge to live with more ease.</p>
-        <div class="flex items-center justify-between">
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest">April 8, 2026 · Mini Govil</p>
-          <span class="text-primary text-xs font-label uppercase tracking-widest group-hover:translate-x-1 transition-transform duration-300">Read →</span>
+
+        <div class="p-8 md:p-12 flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">
+              {{ featured_category_label }}
+            </span>
+            <span class="text-stone-600 text-xs font-label uppercase tracking-widest">Featured</span>
+          </div>
+
+          <h2 class="font-headline text-2xl md:text-3xl text-on-surface mb-4 group-hover:text-primary transition-colors leading-snug">
+            {{ featured_post.title }}
+          </h2>
+
+          <p class="text-on-surface-variant font-light text-sm leading-relaxed mb-6">
+            {{ featured_post.description | default: featured_post.excerpt | strip_html | truncate: 220 }}
+          </p>
+
+          <div class="flex items-center justify-between">
+            <p class="text-stone-600 text-xs font-label uppercase tracking-widest">
+              {{ featured_post.date | date: "%B %d, %Y" }} · Mini Govil
+            </p>
+            <span class="text-primary text-xs font-label uppercase tracking-widest group-hover:translate-x-1 transition-transform duration-300">
+              Read →
+            </span>
+          </div>
         </div>
-      </div>
-    </a>
-  </div>
-</section>
+      </a>
+    </div>
+  </section>
+{% endif %}
 
 <!-- ═══════════════════ ARTICLES GRID ═══════════════════ -->
 <section class="pb-24 bg-surface">
   <div class="max-w-7xl mx-auto px-6 md:px-12">
     <div id="postsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-      <!-- Post 1 -->
-      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="tarot">
-        <div class="h-48 overflow-hidden">
-          <img src="images/feature-tarot.jpg" alt="Major Arcana Tarot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Tarot</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">The Major Arcana: A Beginner's Guide to the 22 Cards</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">From The Fool to The World — understanding the Major Arcana is your first step to confident, intuitive tarot reading.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">April 5, 2026</p>
-        </div>
-      </a>
+      {% for post in site.posts offset:1 %}
+        {% assign first_category = post.categories | first %}
+        {% assign raw_category = post.category | default: first_category | default: 'astrology' %}
+        {% assign category_slug = raw_category | downcase | replace: 'vedic astrology', 'vedic' | replace: ' ', '-' %}
+        {% assign category_label = post.category_label | default: raw_category | replace: '-', ' ' %}
+        {% if category_slug == 'vedic' %}
+          {% assign category_label = 'Vedic Astrology' %}
+        {% endif %}
+        {% assign post_image = post.image | default: post.thumbnail | default: 'images/banner.jpg' %}
 
-      <!-- Post 3 -->
-      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="vedic">
-        <div class="h-48 overflow-hidden">
-          <img src="images/vedic-1.jpg" alt="Saturn Return Vedic Astrology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Vedic Astrology</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Saturn Return: Why Your Late 20s Feel Like Everything is Changing</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Saturn's return every 29.5 years is a powerful cosmic reset. Here's what to expect and how to work with it.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 28, 2026</p>
-        </div>
-      </a>
+        <a href="{{ post.url | relative_url }}"
+           class="filter-card post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500"
+           data-category="{{ category_slug }}">
+          <div class="h-48 overflow-hidden">
+            <img src="{{ post_image | relative_url }}"
+                 alt="{{ post.title }}"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
+          </div>
 
-      <!-- Post 3 -->
-      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="tarot">
-        <div class="h-48 overflow-hidden">
-          <img src="images/tarot-2.jpg" alt="Daily Tarot Pull" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Tarot</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">How to Do a Daily One-Card Tarot Pull — and Actually Benefit From It</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">A simple 2-minute morning ritual that brings surprising clarity. Here's how to start and what to look for.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 24, 2026</p>
-        </div>
-      </a>
+          <div class="p-6 flex flex-col flex-grow">
+            <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">
+              {{ category_label }}
+            </span>
 
-      <!-- Post 4 -->
-      <a href="vedic-vs-western-astrology.html" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="vedic">
-        <div class="h-48 overflow-hidden">
-          <img src="images/vedic-vs-western-astrology.jpg" alt="Vedic astrology vs Western astrology comparison — sidereal vs tropical zodiac" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Vedic Astrology</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Vedic vs Western Astrology: What's the Real Difference and Which One Is Right for You?</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Sidereal vs tropical zodiac, moon sign, nakshatra, kundali — decoded in plain language so you know which system suits your life.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">May 5, 2026</p>
-        </div>
-      </a>
+            <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">
+              {{ post.title }}
+            </h3>
 
-      <!-- Post 5 -->
-      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="spiritual">
-        <div class="h-48 overflow-hidden">
-          <img src="images/stock_4.png" alt="Spiritual Practices" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Spiritual</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">5 Daily Rituals That Align You With the Cosmic Flow</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Simple, grounding practices — inspired by Vedic wisdom — to start each day with intention and cosmic awareness.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 15, 2026</p>
-        </div>
-      </a>
+            <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">
+              {{ post.description | default: post.excerpt | strip_html | truncate: 150 }}
+            </p>
 
-      <!-- Post 6 -->
-      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="astrology">
-        <div class="h-48 overflow-hidden">
-          <img src="images/stock_3.png" alt="Rising Sign Astrology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Astrology</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Your Rising Sign: The Mask You Wear and the Soul Beneath</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Your Lagna or Ascendant shapes how the world sees you — and how you see the world. Here's what it reveals.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 10, 2026</p>
-        </div>
-      </a>
-
-      <!-- Post 7 -->
-      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="spiritual">
-        <div class="h-48 overflow-hidden">
-          <img src="images/feature-live.jpg" alt="Angel Numbers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Spiritual</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Angel Numbers 111, 222, 333 — What They're Trying to Tell You</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">Seeing repeating numbers everywhere? The universe is sending you a message. Here's how to decode it.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">March 5, 2026</p>
-        </div>
-      </a>
-
-      <!-- Post 8 -->
-      <a href="#" class="post-card group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/15 flex flex-col hover:border-primary/30 transition-all duration-500" data-category="spiritual">
-        <div class="h-48 overflow-hidden">
-          <img src="images/feature-daily.jpg" alt="Full Moon Rituals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block text-xs font-label uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full mb-3 w-fit">Spiritual</span>
-          <h3 class="font-headline text-lg text-on-surface mb-2 group-hover:text-primary transition-colors leading-snug">Full Moon Rituals: How to Release, Reflect and Reset Each Month</h3>
-          <p class="text-on-surface-variant text-xs font-light leading-relaxed flex-grow">The full moon is the most powerful time for releasing what no longer serves you. Here's a simple ritual to try tonight.</p>
-          <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">February 28, 2026</p>
-        </div>
-      </a>
+            <p class="text-stone-600 text-xs font-label uppercase tracking-widest mt-4">
+              {{ post.date | date: "%B %d, %Y" }}
+            </p>
+          </div>
+        </a>
+      {% endfor %}
 
     </div>
 
@@ -314,9 +280,9 @@ title: Blog
     document.getElementById('mobileMenu').classList.toggle('open');
   });
 
-  // Category filter
+  // Category filter for Jekyll generated posts
   const btns = document.querySelectorAll('.category-btn');
-  const cards = document.querySelectorAll('.post-card');
+  const cards = document.querySelectorAll('.filter-card');
   const noResults = document.getElementById('noResults');
 
   btns.forEach(btn => {
@@ -329,7 +295,7 @@ title: Blog
 
       cards.forEach(card => {
         const match = cat === 'all' || card.dataset.category === cat;
-        card.style.display = match ? 'flex' : 'none';
+        card.classList.toggle('hidden-card', !match);
         if (match) visible++;
       });
 
